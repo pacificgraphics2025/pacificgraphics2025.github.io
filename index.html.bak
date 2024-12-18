@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9VPG1GEGDL"></script>
     <script>
@@ -10,7 +11,6 @@
 
       gtag('config', 'G-9VPG1GEGDL');
     </script>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Pacific Graphics 2025</title>
     <meta name="keyword" content="Computer Graphics">
   </head>
@@ -26,35 +26,82 @@
       33th Pacific Conference on Computer Graphics and Applications (Pacific
       Graphics 2025) will be held in Taipei, Taiwan and hosted by National
       Chengchi University over <b>October 14-17, 2025</b>. Pacific Graphics is
-      an annual flagship conference of the Asia Graphics Association. As a
-      highly successful conference series, Pacific Graphics provides a premium
-      forum for researchers, developers, practitioners in the Pacific Rim and
-      around the world to present and discuss new problems, solutions, and
-      technologies in computer graphics and related areas.</p>
+      an annual flagship conference of the <a href="http://www.asiagraphics.org/">Asia
+        Graphics Association</a>. As a highly successful conference series,
+      Pacific Graphics provides a premium forum for researchers, developers,
+      practitioners in the Pacific Rim and around the world to present and
+      discuss new problems, solutions, and technologies in computer graphics and
+      related areas.</p>
     <hr style="color: black;">
     <h2 style="font-size: 1.5rem; line-height: 2rem; color: rgb(0, 0, 0); font-family: &quot;Source Sans Pro&quot;, Helvetica, Arial; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-weight: bold;">Important
       Dates</h2>
     <p> </p>
     <p>All deadlines are at 23:59 AoE.</p>
-    <p>Paper abstract due&nbsp;&nbsp;&nbsp; May 30</p>
-    <p>Paper due&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; June 6</p>
-    <p>Reviews to Authors</p>
-    <p>Rebuttal Due</p>
-    <p>Decision Notification</p>
-    <p>Revised Version Due</p>
-    <p>Final Notification</p>
-    <p>Camera Ready Due<br>
-    </p>
-    <p>Conference dates&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; October 14-17</p>
-    <p><br>
-    </p>
+    <table style="width: 80%;" border="0">
+      <tbody>
+        <tr>
+          
+          <td style="width: auto;">Paper abstract due</td>
+          <td>May 30</td>
+        </tr>
+        <tr>
+          <td>Paper due</td>
+          <td>June 6</td>
+        </tr>
+        <tr>
+          <td>Reviews to Authors</td>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td>Rebuttal Due</td>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td>Decision Notification</td>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td>Revised Version Due</td>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td>Final Notification</td>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td>Conference dates </td>
+          <td>October 14-17</td>
+        </tr>
+      </tbody>
+    </table>
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br>
+    <hr style="color: black;">
+    <h2 style="font-size: 1.5rem; line-height: 2rem; color: rgb(0, 0, 0); font-family: &quot;Source Sans Pro&quot;, Helvetica, Arial; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-weight: bold;">Organizers</h2>
+    <p><b>Conference Chairs</b><br>
+      Tsai-Yen Li, National Chengchi University<br>
+      C. Karen Liu, Stanford University<br>
+      Olga Sorkine-Hornung, ETH Zurich<br>
+      <b><br>
+        Program Chairs</b><br>
+      Yu-Shuen Wang, National Yang Ming Chiao Tung University<br>
+      Marc Christie, University of Rennes 1<br>
+      Nico Pietroni, University of Technology Sydney<br>
+      <br>
+      <b>Local Arrangement Chairs</b><br>
+      Ming-Te Chi, National Chengchi University</p>
+    <p> </p>
     <hr style="color: black;">
     <p><b>Contact </b><span style="color: rgb(0, 0, 0); font-family: &quot;Source Sans Pro&quot;, Helvetica, Arial; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br>
       </span></p>
     <p><span style="color: rgb(0, 0, 0); font-family: &quot;Source Sans Pro&quot;, Helvetica, Arial; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">If
-        you have any questions or suggestions, please contact us by emailing</span>
-    </p>
+        you have any questions or suggestions, please contact us by emailing <a
+
+          href="mailto:pg2025team@gmail.com">pg2025team@gmail.com</a></span> </p>
     <div style="text-align: center;">
       <script language="Javascript">
 document.write("<font style=font-size:12pt;Color:#000000>" , "Update: "+document.lastModified+"" , "</font>");
