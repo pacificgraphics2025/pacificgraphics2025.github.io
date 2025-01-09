@@ -36,14 +36,80 @@ span .highlight-blue::after {
     background-color: #ddeeff;
 }
 
-
 /* 動畫 */
 span .highlight-red.active::after,
-span .highlight-green.active::after {
+span .highlight-green.active::after,
+span .highlight-blue.active::after {
     width: 100%;
+}
+
+.hover_nav_btn{
+    color: #3a3a3a;
+}
+.hover_nav_btn:hover{
+    background: #fff!important;
+    text-emphasis-color: currentColor;
 }
 
 .w3-light-grey {
     position: relative;
     z-index: 0; /* 背景層級 */
+}
+
+.hover_nav_btn {
+    text-decoration: none;
+    position: relative;    /*定位偽元素*/
+    transition: color 0.5s ease-in-out;
+}
+
+/*滑動出現底線*/
+.hover_nav_btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 30%;
+    top: 50%;
+    bottom: 0;
+    width: 0;
+    height: 20px; /*底線厚度*/
+    background-color: #9e9e9e;
+    opacity: 0.3;
+    margin-left: 10%;
+    transition: width 0.5s ease-in-out;
+}
+
+.hover_nav_btn:hover::after {
+    width: 80%; /*底線展開*/
+}
+
+.bgimg1 {
+    width: 100vw;
+    /* height: 100vh; */
+    object-fit: cover;  
+}
+
+.home-logo {
+    height: 35px;           
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.w3-top{
+    z-index: 3;
+}
+
+@media (min-width: 601px) {
+    .home-logo{
+        height: 50px;
+    }    
+    /* 確保 navbar 內元素垂直置中 */
+    .w3-bar {
+        display: flex;
+        align-items: center;    /* 垂直置中 */
+
+        justify-content:space-between;  /* 左右分佈 */
+        padding: 0.5rem;        /* 增加內距 */
+    }  
 }

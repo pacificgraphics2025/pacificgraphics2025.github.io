@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./css/pg25.css">
 
+<link rel="icon" href="./img/PG.png" sizes="32x32"  type="image/png">
+
 <script src="./js/pg25.js"></script>
 
 <style>
@@ -22,30 +24,37 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-light-grey w3-card w3-left-align w3-large">
+  <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+    
+    <a href="#" class="w3-bar-item logo-container">
+      <img src="./img/PG_logo.png" alt="Home Logo" class="home-logo">
+    </a>
+    <!-- <a href="#" class="w3-bar-item logo-container">home</a> -->
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large " href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-
-    <a href="#" class="w3-text-red w3-hover-text-red w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a>
-    <a href="#Organizers" class="w3-text-green w3-hover-text-green w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Organizers</a>
-    <a href="#" class="w3-text-blue w3-hover-text-blue w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Program</a>
-    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a> -->
+    
+    <div class="w3-right w3-hide-small">
+      <a href="#Dates"          class="hover_nav_btn w3-bar-item w3-button w3-hide-small w3-padding-large">Dates</a>
+      <a href="#News"           class="hover_nav_btn w3-bar-item w3-button w3-hide-small w3-padding-large">News</a>
+      <a href="#Organizers"     class="hover_nav_btn w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Organizers</a>
+      <a href="#PastConference" class="hover_nav_btn w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Past Conference</a>
+    </div>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#Dates" class="w3-bar-item w3-button w3-padding-large">Dates</a>
+    <a href="#News" class="w3-bar-item w3-button w3-padding-large">News</a>
     <a href="#Organizers" class="w3-bar-item w3-button w3-padding-large">Organizers</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Registration</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Program</a>
-    <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a> -->
+    <a href="#PastConference" class="w3-bar-item w3-button w3-padding-large">Past Conference</a>
   </div>
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-light-grey w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">START PAGE</h1>
+<header class="w3-container w3-light-grey w3-center " style="padding:80px 0px 0px 0px">
+  <img src="./img/b.png" class="bgimg1">
+  <!-- <h1 class="w3-margin w3-jumbo">START PAGE</h1>
   <p class="w3-xlarge">Template by w3.css</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
 </header>
 
 <!-- Pacific Graphics 2025 -->
@@ -66,8 +75,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   </div>
 </div>
 
+<!-- News -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+      <span class="container">
+        <h1 class="highlight-green">News</h1>
+      </span>
+      <ul>
+        <li>
+          Homepage opens (2024-07-01)
+        </li>
+      </ul>
+  </div>
+</div>
+
 <!-- Important Dates -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="Dates">
   <div class="w3-content">
 
     <div class="w3-twothird">
@@ -132,7 +155,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <div class="w3-content">
       <!-- <div class="w3-twothird"> -->
         <span class="container">
-          <h1 class="highlight-green">Organizers</h1>
+          <h1 class="highlight-blue">Organizers</h1>
         </span>
 
         <p class="w3-large">Conference Chairs</p>
