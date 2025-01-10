@@ -89,7 +89,7 @@ span .highlight-blue.active::after {
 }
 
 .home-logo {
-    height: 35px;           
+    height: 40px;           
     width: auto;
     max-width: 100%;
     object-fit: contain;
@@ -100,16 +100,31 @@ span .highlight-blue.active::after {
     z-index: 3;
 }
 
+.liner{
+    width: 90vw; /* 16*16 */
+    height: 48px; /* 16*3 */
+    /* background-color: #F1F1F1; */
+    background-image: url(/PG/img/PG_line-09.png);
+    background-size:  auto 100%;       /* 依照容器高度縮放圖片，寬度自適應 */
+    background-repeat: repeat;        /* 背景重複 */
+    background-position: center;
+    margin: 0 auto;
+}
+
 @media (min-width: 601px) {
     .home-logo{
         height: 50px;
     }    
-    /* 確保 navbar 內元素垂直置中 */
+    /* 確保nav內元素垂直置中 */
     .w3-bar {
         display: flex;
         align-items: center;    /* 垂直置中 */
 
-        justify-content:space-between;  /* 左右分佈 */
+        justify-content:space-between;
         padding: 0.5rem;        /* 增加內距 */
     }  
+    .liner{
+        width: 75vw; /* 16*16 */
+        height: 48px; /* 16*3 */
+    }
 }
