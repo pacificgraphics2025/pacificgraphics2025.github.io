@@ -104,9 +104,9 @@ span .highlight-blue.active::after {
     width: 90vw; /* 16*16 */
     height: 48px; /* 16*3 */
     /* background-color: #F1F1F1; */
-    background-image: url(/PG/img/PG_line-09.png);
-    background-size:  auto 100%;       /* 依照容器高度縮放圖片，寬度自適應 */
-    background-repeat: repeat;        /* 背景重複 */
+    background-image: url(../img/PG_line.png);
+    background-size:  auto 100%;
+    background-repeat: repeat;
     background-position: center;
     margin: 0 auto;
 }
