@@ -13,12 +13,14 @@ window.addEventListener("scroll", function() {
     const announcement = document.getElementById("announcement");
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     
-    if (currentScroll > lastScrollTop) {
-        // 向下滾動時隱藏
-        announcement.style.display = "none"; 
+    if (currentScroll === 0) {
+        announcement.style.display = "block";
+    } else if (currentScroll > lastScrollTop) {
+        announcement.style.display = "none";
     } else {
-        // 向上滾動時顯示
-        announcement.style.display = "block"; 
+        announcement.style.display = "block";
     }
+    
     lastScrollTop = currentScroll;
+    console.log(currentScroll);
 });
