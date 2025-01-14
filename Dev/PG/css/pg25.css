@@ -82,6 +82,20 @@ span .highlight-blue.active::after {
     width: 80%; /*底線展開*/
 }
 
+/* Announcement bar (正常流動) */
+#announcement {
+    width: 100%;
+    line-height: 0rem;
+    background-color: #fff;
+    padding: 10px;
+    color: #3a3a3a;
+    text-align: center;
+}
+
+.banner{
+    padding:110px 0px 0px 0px;
+}
+
 .bgimg1 {
     width: 100vw;
     /* height: 100vh; */
@@ -102,6 +116,7 @@ span .highlight-blue.active::after {
 
 .liner{
     width: 90vw; /* 16*16 */
+    max-width: 1080px;
     height: 48px; /* 16*3 */
     /* background-color: #F1F1F1; */
     background-image: url(../img/PG_line.png);
@@ -124,7 +139,10 @@ span .highlight-blue.active::after {
         padding: 0.5rem;        /* 增加內距 */
     }  
     .liner{
-        width: 75vw; /* 16*16 */
         height: 48px; /* 16*3 */
     }
+    .banner{
+        padding:130px 0px 0px 0px;
+    }
 }
+
