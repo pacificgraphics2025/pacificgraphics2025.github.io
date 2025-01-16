@@ -1,7 +1,8 @@
 /* 通用樣式 */
 span .highlight-red,
 span .highlight-green,
-span .highlight-blue {
+span .highlight-blue,
+span .highlight-white {
     position: relative;
     display: inline-block;
     z-index: 2;
@@ -9,7 +10,8 @@ span .highlight-blue {
 
 span .highlight-red::after,
 span .highlight-green::after,
-span .highlight-blue::after {
+span .highlight-blue::after,
+span .highlight-white::after {
     content: "";
     height: 30%;
     position: absolute;
@@ -25,21 +27,24 @@ span .highlight-blue::after {
 span .highlight-red::after {
     background-color: #ffdddd;
 }
-
 /* 綠色 highlight */
 span .highlight-green::after {
     background-color: #e7ffe7;
 }
-
 /* 藍色 highlight */
 span .highlight-blue::after {
     background-color: #ddeeff;
+}
+/* 白色 highlight */
+span .highlight-white::after{
+    background-color: #fff;
 }
 
 /* 動畫 */
 span .highlight-red.active::after,
 span .highlight-green.active::after,
-span .highlight-blue.active::after {
+span .highlight-blue.active::after,
+span .highlight-white.active::after {
     width: 100%;
 }
 
