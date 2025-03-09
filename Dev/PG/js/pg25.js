@@ -9,18 +9,23 @@ document.addEventListener('scroll', function () {
 });
 
 let lastScrollTop = 0;
+
 window.addEventListener("scroll", function() {
     const announcement = document.getElementById("announcement");
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     
     if (currentScroll === 0) {
+        
         announcement.style.display = "block";
+
     } else if (currentScroll > lastScrollTop) {
         announcement.style.display = "none";
     } else {
         announcement.style.display = "block";
     }
     
+    
     lastScrollTop = currentScroll;
     console.log(currentScroll);
 });
+
