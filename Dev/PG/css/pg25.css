@@ -87,6 +87,15 @@ span .highlight-white.active::after {
     width: 80%; /*底線展開*/
 }
 
+.hover_nav_btn_dropdown:hover{
+    background-color: #F1F1F1 !important; 
+}
+
+.dropdown_hovered {
+    background-color: #F1F1F1 !important;
+}
+
+
 /* Announcement bar (正常流動) */
 #announcement {
     width: 100%;

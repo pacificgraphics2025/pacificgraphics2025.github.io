@@ -29,3 +29,17 @@ window.addEventListener("scroll", function() {
     console.log(currentScroll);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdown = document.querySelector('.w3-dropdown-hover');
+    const button = dropdown?.querySelector('.hover_nav_btn_dropdown_un');
+  
+    if (dropdown && button) {
+      dropdown.addEventListener('mouseenter', () => {
+        button.classList.add('dropdown_hovered');
+      });
+  
+      dropdown.addEventListener('mouseleave', () => {
+        button.classList.remove('dropdown_hovered');
+      });
+    }
+  });  
