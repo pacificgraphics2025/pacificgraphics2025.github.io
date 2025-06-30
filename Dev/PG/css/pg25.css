@@ -95,11 +95,25 @@ span .highlight-white.active::after {
     background-color: #F1F1F1 !important;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+  
 
 /* Announcement bar (正常流動) */
 #announcement {
     width: 100%;
-    line-height: 0rem;
+    line-height: 2rem;
     background-color: #fff;
     padding: 10px;
     color: #3a3a3a;
@@ -157,6 +171,9 @@ span .highlight-white.active::after {
     }
     .banner{
         padding:130px 0px 0px 0px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
     }
 }
 
