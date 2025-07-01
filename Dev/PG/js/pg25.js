@@ -26,7 +26,7 @@ window.addEventListener("scroll", function() {
     
     
     lastScrollTop = currentScroll;
-    console.log(currentScroll);
+    // console.log(currentScroll);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
