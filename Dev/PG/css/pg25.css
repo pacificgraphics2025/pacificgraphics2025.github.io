@@ -142,6 +142,10 @@ span .highlight-white.active::after {
     z-index: 3;
 }
 
+.w3-padding-bottom-64 {
+    padding-bottom: 64px!important
+}
+
 .liner{
     width: 90vw; /* 16*16 */
     max-width: 1080px;
