@@ -146,6 +146,10 @@ span .highlight-white.active::after {
     padding-bottom: 64px!important
 }
 
+.w3-margin-table{
+    margin: 0px!important
+}
+
 .liner{
     width: 90vw; /* 16*16 */
     max-width: 1080px;
@@ -178,6 +182,9 @@ span .highlight-white.active::after {
     }
     .grid-container {
         grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+    }
+    .w3-margin-table{
+        margin: 16px!important;
     }
 }
 
