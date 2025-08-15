@@ -46,7 +46,13 @@
         .fa-anchor,
         .fa-coffee {
             font-size: 200px
-        }
+	}
+
+	.num {
+    		text-align: right;              /* 靠右對齊 */
+    		white-space: nowrap;            /* 不換行 */
+    		font-variant-numeric: tabular-nums; /* 啟用等寬數字 */
+    	}
     </style>
 </head>
 
@@ -80,36 +86,36 @@
                     <tr>
                         <th>Plan</th>
                         <th>Type</th>
-                        <th><a href="https://www.asiagraphics.org/membership" target="_blank">AsiaGraphics</a></th>
-                        <th>Non-AsiaGraphics</th>
+                        <th style="text-align: right;"><a href="https://www.asiagraphics.org/membership" target="_blank">AsiaGraphics</a></th>
+                        <th style="text-align: right;">Non-AsiaGraphics</th>
                     </tr>
                 </thead>
                 <tbody>
                 
                     <tr>
-                        <td rowspan="2" class="football">Early-Bird (on and before Sep 18 00:00(+0800), 2025)</td>
+			<td rowspan="2" class="football">Early-Bird</br>(on and before Sep 18 00:00(+0800), 2025)</td>
                         <td>Full</td>
-                        <td>15,000TWD (500USD)</td>
-                        <td>17,100TWD (570USD)</td>
+                        <td style="text-align: right;">15,000TWD (500USD)</td>
+                        <td style="text-align: right;">17,100TWD (570USD)</td>
                     </tr>
 
                     <tr>
                         <td>Student</td>
-                        <td> 8,700TWD (290USD)</td>
-                        <td> 9,600TWD (320USD)</td>
+                        <td style="text-align: right;"> 8,700TWD (290USD)</td>
+                        <td style="text-align: right;"> 9,600TWD (320USD)</td>
                     </tr>
 
                     <tr>
-                        <td rowspan="2">Regular (after Sep 18, 2025)</td>
+			<td rowspan="2">Regular</br>(after Sep 18, 2025)</td>
                         <td>Full</td>
-                        <td>15,900TWD (530USD)</td>
-                        <td>18,000TWD (600USD)</td>
+                        <td style="text-align: right;">15,900TWD (530USD)</td>
+                        <td style="text-align: right;">18,000TWD (600USD)</td>
                     </tr>
 
                     <tr>
                         <td>Student</td>
-                        <td> 9,600TWD (320USD)</td>
-                        <td>10,500TWD (350USD)</td>
+                        <td style="text-align: right;"> 9,600TWD (320USD)</td>
+                        <td style="text-align: right;">10,500TWD (350USD)</td>
                     </tr>
                 </tbody>
             </table>
