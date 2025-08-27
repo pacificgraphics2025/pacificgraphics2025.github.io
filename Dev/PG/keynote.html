@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pacific Graphics 2025</title>
+  <meta name="keyword" content="Computer Graphics">
+  <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9VPG1GEGDL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9VPG1GEGDL');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/pg25.css">
+
+  <link rel="icon" href="img/PG.png" sizes="32x32" type="image/png">
+
+  <script src="js/pg25.js"></script>
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+      font-size: 200px
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+  <script>
+    fetch('./navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+  
+
+  <!-- Header -->
+  <header id="cn"  class="w3-container w3-center w3-padding-64">
+  </header>
+
+  <!-- <div class="liner"></div> -->
+
+  <!-- Visa -->
+  <div class="w3-row-padding w3-padding-32 w3-container w3-margin-bottom">
+    <div class="w3-content">
+      <span class="container">
+        <h1 class="highlight-red">Keynotes</h1><br>
+        <h2 class="highlight-blue">Remco Chang, Tufts University</h2>
+      </span>
+
+        <div class="grid-2-1 w3-margin-top">
+            
+            <div class="w3-margin-bottom">
+
+
+              <h4>Chair:</h4>
+                <p>Kwan-Liu Ma</p>
+                <br>
+              <h4>Topic:</h4>
+                <p>A Visualization Is Worth a Thousand Queries: Towards a Foundation for Reasoning in Visual Analytics</p>
+
+              <br>
+              <h4>Date:</h4>
+                <p>11:00 ~ 12:00, April 25</p>
+
+            </div>
+
+            <div class="w3-margin-bottom">
+              <img src="https://pacificvis2025.github.io/pages/assets/img/Keynotes/rchang03.png">
+            </div>
+        </div>
+
+        <h4>Abstract:</h4>
+        <p>As visual analytics continues to mature, so too must our understanding of its conceptual foundations. In this talk, I propose a framing of visualization in terms of functions, spaces, and grammar, offering a perspective aimed at formalizing how visualizations mediate between data, analytic tasks, and reasoning. We begin with the notion of visualization as a function: a mapping from data and interaction parameters to visual representations. This functional view, illustrated through systems like NeuralCubes, positions visualizations as surrogates for query execution. More broadly, it invites us to consider query spaces: the range of potential questions a visualization can support, suggest, or help refine. At the heart of this framing is the concept of design-specific transformations, where visual encodings embed analytic computation directly into their form. A pie chart, for example, does more than display values; it pre-computes part-to-whole relationships, reducing cognitive effort and guiding interpretation. These often-invisible transformations shape the interpretive work a visualization performs and influence the kinds of questions it can help answer. Making them explicit allows us to more precisely describe a visualization’s analytic affordances. Building on this, we introduce a hypothesis grammar, a conceptual framework that captures the structure of analytic questions. This grammar makes it possible to represent ambiguous or underspecified queries as modifiable query spaces. By aligning user tasks with data transformations and visual encodings, it helps enumerate the space of testable questions a visual analytics system can meaningfully support. Together, these ideas suggest a path toward a more formal theory of visual analytics. By conceptualizing visualizations as functions, spaces, and grammars, we can bring data, task, and visual design into a unified framework—one that offers a more rigorous and operational foundation for the visual analytics community.</p>
+    </div>
+  </div>
+
+  <div class="w3-light-grey w3-row-padding w3-padding-32 w3-container w3-margin-bottom">
+    <div class="w3-content">
+      <span class="container">
+        <h2 class="highlight-white">Remco Chang, Tufts University</h2>
+      </span>
+
+        <div class="grid-2-1 w3-margin-top">
+          
+          <div class="w3-margin-bottom">
+            <h4>Chair:</h4>
+              <p>Kwan-Liu Ma</p>
+              <br>
+            <h4>Topic:</h4>
+              <p>A Visualization Is Worth a Thousand Queries: Towards a Foundation for Reasoning in Visual Analytics</p>
+
+            <br>
+            <h4>Date:</h4>
+              <p>11:00 ~ 12:00, April 25</p>
+
+          </div>
+
+          <div class="w3-margin-bottom">
+            <img src="https://pacificvis2025.github.io/pages/assets/img/Keynotes/rchang03.png">
+          </div>
+      </div>
+
+      <h4>Abstract:</h4>
+      <p>As visual analytics continues to mature, so too must our understanding of its conceptual foundations. In this talk, I propose a framing of visualization in terms of functions, spaces, and grammar, offering a perspective aimed at formalizing how visualizations mediate between data, analytic tasks, and reasoning. We begin with the notion of visualization as a function: a mapping from data and interaction parameters to visual representations. This functional view, illustrated through systems like NeuralCubes, positions visualizations as surrogates for query execution. More broadly, it invites us to consider query spaces: the range of potential questions a visualization can support, suggest, or help refine. At the heart of this framing is the concept of design-specific transformations, where visual encodings embed analytic computation directly into their form. A pie chart, for example, does more than display values; it pre-computes part-to-whole relationships, reducing cognitive effort and guiding interpretation. These often-invisible transformations shape the interpretive work a visualization performs and influence the kinds of questions it can help answer. Making them explicit allows us to more precisely describe a visualization’s analytic affordances. Building on this, we introduce a hypothesis grammar, a conceptual framework that captures the structure of analytic questions. This grammar makes it possible to represent ambiguous or underspecified queries as modifiable query spaces. By aligning user tasks with data transformations and visual encodings, it helps enumerate the space of testable questions a visual analytics system can meaningfully support. Together, these ideas suggest a path toward a more formal theory of visual analytics. By conceptualizing visualizations as functions, spaces, and grammars, we can bring data, task, and visual design into a unified framework—one that offers a more rigorous and operational foundation for the visual analytics community.</p>
+  
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-32 w3-container w3-margin-bottom">
+    <div class="w3-content">
+      <span class="container">
+        <h1 class="highlight-red">Keynotes</h1><br>
+        <h2 class="highlight-blue">Remco Chang, Tufts University</h2>
+      </span>
+
+        <div class="grid-2-1 w3-margin-top">
+            
+            <div class="w3-margin-bottom">
+
+
+              <h4>Chair:</h4>
+                <p>Kwan-Liu Ma</p>
+                <br>
+              <h4>Topic:</h4>
+                <p>A Visualization Is Worth a Thousand Queries: Towards a Foundation for Reasoning in Visual Analytics</p>
+
+              <br>
+              <h4>Date:</h4>
+                <p>11:00 ~ 12:00, April 25</p>
+
+            </div>
+
+            <div class="w3-margin-bottom">
+              <img src="https://pacificvis2025.github.io/pages/assets/img/Keynotes/rchang03.png">
+            </div>
+        </div>
+
+        <h4>Abstract:</h4>
+        <p>As visual analytics continues to mature, so too must our understanding of its conceptual foundations. In this talk, I propose a framing of visualization in terms of functions, spaces, and grammar, offering a perspective aimed at formalizing how visualizations mediate between data, analytic tasks, and reasoning. We begin with the notion of visualization as a function: a mapping from data and interaction parameters to visual representations. This functional view, illustrated through systems like NeuralCubes, positions visualizations as surrogates for query execution. More broadly, it invites us to consider query spaces: the range of potential questions a visualization can support, suggest, or help refine. At the heart of this framing is the concept of design-specific transformations, where visual encodings embed analytic computation directly into their form. A pie chart, for example, does more than display values; it pre-computes part-to-whole relationships, reducing cognitive effort and guiding interpretation. These often-invisible transformations shape the interpretive work a visualization performs and influence the kinds of questions it can help answer. Making them explicit allows us to more precisely describe a visualization’s analytic affordances. Building on this, we introduce a hypothesis grammar, a conceptual framework that captures the structure of analytic questions. This grammar makes it possible to represent ambiguous or underspecified queries as modifiable query spaces. By aligning user tasks with data transformations and visual encodings, it helps enumerate the space of testable questions a visual analytics system can meaningfully support. Together, these ideas suggest a path toward a more formal theory of visual analytics. By conceptualizing visualizations as functions, spaces, and grammars, we can bring data, task, and visual design into a unified framework—one that offers a more rigorous and operational foundation for the visual analytics community.</p>
+    </div>
+  </div>
+
+  
+  <!-- <div class="liner"></div> -->
+
+  <!-- Footer -->
+  <footer class="w3-light-grey w3-container w3-padding-32 w3-center w3-opacity">
+    <p>If you have any questions or suggestions, please contact us by <a
+        href="mailto:pg2025team@gmail.com">pg2025team@gmail.com</a></p>
+    <p> © Pacific Graphics 2025 - All Rights Reserved </p>
+  </footer>
+
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
