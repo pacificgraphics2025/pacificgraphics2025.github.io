@@ -1,333 +1,1592 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ver_3</title>
-    <link rel="stylesheet" href="program.css">
+    <title>Pacific Graphics 2025</title>
+    <meta name="keyword" content="Computer Graphics">
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9VPG1GEGDL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9VPG1GEGDL');
+    </script>
+    <!-- CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="css/pg25.css">
+    <link rel="stylesheet" href="program.css">
+    <!-- Favicon -->
+    <link rel="icon" href="img/PG.png" sizes="32x32" type="image/png">
+    <!-- JS -->
+    <script src="js/pg25.js"></script>
+    <!-- Custom Style -->
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
 
-<body>
-    <div class="schedule-header">
-        <h2>Tuesday, October 14, 2024</h2>
-    </div>
-    <div class="program-divider"></div>
-    <!-- Lunch -->
-    <div class="program-item">
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+    <script>
+        fetch('./navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+    <!-- Header -->
+    <header id="cn" class="w3-container w3-center w3-padding-64"> </header>
+    <!-- center(Fixed) -->
+    <div class="middle-milk">
+      <h1 class="highlight-red">Program</h1>
+      <table style="width: 100%;" border="1">
+        <tbody>
+          <tr>
+            <td style="text-align: center; background-color: #deeaf6;"><a href="#day1">10/14
+                Tue</a></td>
+            <td style="text-align: center; background-color: #deeaf6;"><a href="#day2">10/15
+                Wed</a></td>
+            <td style="text-align: center; background-color: #deeaf6;"><a href="#day3">10/16
+                Thu</a></td>
+            <td style="text-align: center; background-color: #deeaf6;"><a href="#day4">10/17
+                Fri</a></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background-color: #deeaf6; height: 46.3333px;">Registration
+              (2F)<br>
+              (08:30~)</td>
+            <td style="text-align: center; background-color: #deeaf6;">Registration
+              (2F)<br>
+              (08:30~)</td>
+            <td style="text-align: center; background-color: #deeaf6;">Registration
+              (2F)<br>
+              (08:30~)</td>
+            <td style="text-align: center; background-color: #deeaf6;">Registration
+              (2F)<br>
+              (08:30~)</td>
+          </tr>
+          <tr>
+            <td style="background-color: #fff2cc;"><b>Opening </b>(A2)<br>
+              (09:20 – 09:40)<br>
+              <br>
+              <b><a href="keynote.html#keynote1">Keynote 1</a> </b>(A2)<br>
+              Tzu Mao Li <br>
+              (09:40 – 10:40)</td>
+            <td style="background-color: #fff2cc;"><b><a href="keynote.html#keynote2">Keynote
+                  2</a> </b>(A2)<br>
+              Siyu Tang <br>
+              (09:10 – 10:20)</td>
+            <td style="height: 158.833px; background-color: #fff2cc;"><b><a href="keynote.html#keynote3">Keynote
+                  3</a> </b>(A2)<br>
+              Young Min Kim <br>
+              (09:10 – 10:20)</td>
+            <td style="background-color: #e2efd9;"><a href="#s17">Paper S17</a>
+              (A2)<br>
+              <a href="#s18">Paper S18</a> (A301)<br>
+              (09:00 – 10:20)</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background-color: #cc9933;"><b>Break</b><br>
+              (10:40 – 11:00)</td>
+            <td style="text-align: center; background-color: #cc9933;"><b>Break</b><br>
+              (10:20 – 10:40)</td>
+            <td style="text-align: center; background-color: #cc9933;"><b>Break</b><br>
+              (10:20 – 10:40)</td>
+            <td style="height: 44.3333px; text-align: center; background-color: #cc9933;"><b>Break</b><br>
+              (10:20 – 10:40)</td>
+          </tr>
+          <tr>
+            <td style="background-color: #fff2cc;"><b><a href="keynote.html#award1">AG
+                  Award Talk 1</a> (</b>A2)<br>
+              Hui Huang <br>
+              (11:00 – 12:00)</td>
+            <td style="background-color: #e2efd9;"><a href="#s5">Paper S5</a>
+              (A2)<br>
+              <a href="#s6">Paper S6 </a>(A301)<br>
+              (10:40 – 12:00)</td>
+            <td style="background-color: #e2efd9;"><a href="#s11">Paper S11</a>
+              (A2)<br>
+              <a href="#s12">Paper S12</a> (A301)<br>
+              (10:40 – 12:00)</td>
+            <td style="background-color: #e2efd9;"><a href="#s19">Paper S19</a>
+              (A2)<br>
+              <a href="#s20">Paper S20</a> (A301)<br>
+              (10:40 – 12:00)</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background-color: #ff6600;"><b>Lunch</b><br>
+              (12:20 – 13:30)</td>
+            <td style="text-align: center; background-color: #ff6600;"><b>Lunch</b><br>
+              (12:20 – 13:30)</td>
+            <td style="text-align: center; background-color: #ff6600;"><b>Lunch</b><br>
+              (12:20 – 13:30)</td>
+            <td style="background-color: #fff2cc;"><b>Closing <br>
+                &amp; Best paper award</b><br>
+              (12:10 – 13:00)</td>
+          </tr>
+          <tr>
+            <td rowspan="2" colspan="1" style="background-color: #e2efd9;"><a href="#s1">Paper
+                S1 </a>(2F A2)<br>
+              <a href="#s2">Paper S2</a> (3F A301)<br>
+              (13:30 – 15:10)</td>
+            <td rowspan="2" colspan="1" style="background-color: #e2efd9;"><a href="#s7">Paper
+                S7</a> (A301)<br>
+              <a href="#s8">Paper S8</a> (A302)<br>
+              (13:30 – 15:10)</td>
+            <td style="background-color: #fff2cc;"><a href="keynote.html#award2"><b>AG
+                  Award Talk 2 </b></a>(A301)<br>
+              Kunwoo Lee <br>
+              (13:30 – 14:30)</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #e2efd9;"><a href="#s13">Paper S13</a>
+              (A301)<br>
+              <a href="#s14">Paper S14 </a>(A302)<br>
+              (14:30 – 15:30)</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background-color: #cc9933;"><b>Break
+                &amp; Demo</b><br>
+              (15:10 - 15:40)</td>
+            <td style="text-align: center; background-color: #cc9933;"><b>Break
+                &amp; Poster</b><br>
+              (15:10 – 15:40)</td>
+            <td style="text-align: center; background-color: #cc9933;"><b>Break
+                &amp; Poster</b><br>
+              (15:30 – 16:00)</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #e2efd9;">Demo (2F A215)<br>
+              <a href="#s3">Paper S3 </a>(2F A2)<br>
+              <a href="#s4">Paper S4</a> (3F A301)<br>
+              (15:40 -)</td>
+            <td style="background-color: #e2efd9;"><a href="#s9">Paper S9</a>
+              (A301)<br>
+              <a href="#s10">Paper S10</a> (A302)<br>
+              (15:40 –)</td>
+            <td style="background-color: #e2efd9;"><a href="#s15">Paper S15 </a>(A301)<br>
+              <a href="#s16">Paper S16</a> (A302)<br>
+              (16:00 –)</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background-color: #ff6600;"><b>Reception</b><br>
+              (18:30 – 20:00)</td>
+            <td style="text-align: center;"><br>
+            </td>
+            <td style="text-align: center; background-color: #ff6600;"><b>Banquet</b><br>
+              (18:30 – 20:00)</td>
+            <td><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><br>
+      </p>
+      <!-- Day1 -->
+      <div class="schedule-header">
+        <h2><a id="day1">Tuesday, October 14, 2025</a></h2>
+      </div>
+      <!-- Lunch -->
+      <div class="program-item">
         <div class="time-slot">12:20 - 13:30</div>
         <div class="event">
-            <div class="event-content">Lunch</div>
+          <div class="event-content">Lunch</div>
         </div>
-    </div>
-
-    <div class="program-divider"></div>
-
-    <!-- session 1,2 -->
-    <div class="schedule-item">
+      </div>
+      <div class="program-divider"></div>
+      <!-- session 1,2 -->
+      <div class="schedule-item">
         <div class="time-slot">13:30-15:10</div>
         <div class="event">
-            <div class="event-content">Session 1, 2</div>
+          <div class="event-content">Session 1, 2</div>
         </div>
-
         <!-- session 1 資訊（包含論文列表） -->
         <div class="session">
-            <h3 class="session-title"><strong>Session 1: </strong>Point Clouds</h3>
-            <div class="session-info">
-                <p class="location">A2 國際會議廳</p>
-                <!-- <p class="chair"></p> -->
+          <h3 class="session-title"><strong><a id="s1">Session 1:</a> </strong>Point
+            Clouds</h3>
+          <div class="session-info">
+            <p class="location">A2 International Conference Hall</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">IPFNet: Implicit Primitive Fitting for
+                  Robust Point Cloud Segmentation </h4>
+                <i class="fa-solid fa-laptop-house remote-icon journal"></i> </div>
+              <p class="paper-authors">Shengdi Zhou, Xiaoqiang Zan, and Bin Zhou</p>
+              <div class="paper-type journal">Journal Track</div>
             </div>
-
-            <!-- paper list -->
-            <div class="papers-list">
-
-                <!-- paper 1 -->
-                <div class="paper-item journal">
-                    <div class="paper-info">
-                        <h4 class="paper-title">IPFNet: Implicit Primitive Fitting for Robust Point Cloud Segmentation
-                        </h4>
-                        <i class="fa-solid fa-laptop-house remote-icon journal"></i>
-                    </div>
-                    <p class="paper-authors">Shengdi Zhou, Xiaoqiang Zan, and Bin Zhou</p>
-                    <div class="paper-type journal">Journal Track</div>
-                </div>
-                <!-- paper 2 -->
-                <div class="paper-item journal">
-                    <div class="paper-info">
-                        <h4 class="paper-title">FAHNet: Accurate and Robust Normal Estimation for Point Clouds via
-                            Frequency-Aware Hierarchical Geometry"</h4>
-                    </div>
-                    <p class="paper-authors">Chengwei Wang, Wenming Wu, Yue Fei, Gaofeng Zhang, and Liping Zheng</p>
-                    <div class="paper-type journal">Journal Track</div>
-                </div>
-                <!-- paper 3 -->
-                <div class="paper-item journal">
-                    <div class="paper-info">
-                        <h4 class="paper-title">PARC: A Two-Stage Multi-Modal Framework for Point Cloud Completion</h4>
-                    </div>
-                    <p class="paper-authors">Yujiao Cai and Yuhao Su</p>
-                    <div class="paper-type journal">Journal Track</div>
-                </div>
-                <!-- paper 4 -->
-                <div class="paper-item journal">
-                    <div class="paper-info">
-                        <h4 class="paper-title">Multimodal 3D Few-Shot Classification via Gaussian Mixture Discriminant
-                            Analysis</h4>
-                    </div>
-                    <p class="paper-authors">Yiqi Wu, Huachao Wu, Ronglei Hu, Yilin Chen, and Dejun Zhang</p>
-                    <div class="paper-type journal">Journal Track</div>
-                </div>
-                <!-- paper 5 -->
-                <div class="paper-item conference">
-                    <div class="paper-info">
-                        <h4 class="paper-title">Distance-Aware Tri-Perspective View for Efficient 3D Perception in
-                            Autonomous Driving</h4>
-                        <i class="fa-solid fa-laptop-house remote-icon conference"></i>
-                    </div>
-                    <p class="paper-authors">Yutao Tang, Jigang Zhao, Zhengrui Qin, Rui Qiu, Lingying Zhao, Jie Ren, and
-                        Guangxi Chen</p>
-                    <div class="paper-type conference">Conference Track</div>
-
-
-                </div>
+            <!-- paper 2 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">FAHNet: Accurate and Robust Normal
+                  Estimation for Point Clouds via Frequency-Aware Hierarchical
+                  Geometry"</h4>
+              </div>
+              <p class="paper-authors">Chengwei Wang, Wenming Wu, Yue Fei,
+                Gaofeng Zhang, and Liping Zheng</p>
+              <div class="paper-type journal">Journal Track</div>
             </div>
+            <!-- paper 3 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">PARC: A Two-Stage Multi-Modal Framework
+                  for Point Cloud Completion </h4>
+              </div>
+              <p class="paper-authors">Yujiao Cai and Yuhao Su</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Multimodal 3D Few-Shot Classification
+                  via Gaussian Mixture Discriminant Analysis</h4>
+              </div>
+              <p class="paper-authors">Yiqi Wu, Huachao Wu, Ronglei Hu, Yilin
+                Chen, and Dejun Zhang</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Distance-Aware Tri-Perspective View for
+                  Efficient 3D Perception in Autonomous Driving</h4>
+                <i class="fa-solid fa-laptop-house remote-icon conference"></i>
+              </div>
+              <p class="paper-authors">Yutao Tang, Jigang Zhao, Zhengrui Qin,
+                Rui Qiu, Lingying Zhao, Jie Ren, and Guangxi Chen</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
         </div>
         <!-- session 2 資訊（包含論文列表） -->
         <div class="session">
-            <h3 class="session-title"><strong>Session 2: </strong>Detecting & Estimating from images</h3>
-            <div class="session-info">
-                <p class="location">A301</p>
-                <!-- <p class="chair"></p> -->
+          <h3 class="session-title"><strong><a id="s2">Session 2:</a> </strong>Detecting
+            &amp; Estimating from images</h3>
+          <div class="session-info">
+            <p class="location">A301 Multifunctional Room</p>
+            <!-- <p class="chair"></p> --> </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Text-Guided Diffusion with Spectral
+                  Convolution for 3D Human Pose Estimation</h4>
+              </div>
+              <p class="paper-authors">Liyuan Shi, Suping Wu, Sheng Yang, Weibin
+                Qiu, Dong Qiang, and Jiarui Zhao </p>
+              <div class="paper-type journal">Journal Track</div>
             </div>
-
-            <!-- paper list -->
-            <div class="papers-list">
-
-                <!-- paper 1 -->
-                <div class="paper-item journal">
-                    <div class="paper-info">
-                        <h4 class="paper-title">Text-Guided Diffusion with Spectral Convolution for 3D Human Pose
-                            Estimation</h4>
-                    </div>
-                    <p class="paper-authors">Liyuan Shi, Suping Wu, Sheng Yang, Weibin Qiu, Dong Qiang, and Jiarui Zhao
-                    </p>
-                    <div class="paper-type journal">Journal Track</div>
-                </div>
-                <!-- paper 2 -->
-                <div class="paper-item conference">
-                    <div class="paper-info">
-                        <h4 class="paper-title">Learning Transformation-Isomorphic Latent Space for Accurate Hand Pose
-                            Estimation</h4>
-                    </div>
-                    <p class="paper-authors">Kaiwen Ren, Lei Hu, Zhiheng Zhang, Yongjing Ye, and Shihong Xia</p>
-                    <div class="paper-type conference">Conference Track</div>
-                </div>
-                <!-- paper 3 -->
-                <div class="paper-item conference">
-
-                    <div class="paper-info">
-                        <h4 class="paper-title">Skeletal Gesture Recognition Based on Joint Spatio-Temporal and
-                            Multi-Modal Learning</h4>
-                    </div>
-                    <p class="paper-authors">Zhijing Yu, Zhongjie Zhu, Di Ge, Renwei Tu, Yongqiang Bai, Yueping Yang,
-                        and Yuer Wang</p>
-                    <div class="paper-type conference">Conference Track</div>
-                </div>
-                <!-- paper 4 -->
-                <div class="paper-item conference">
-                    <div class="paper-info">
-                        <h4 class="paper-title">Global-Local Complementary Representation Network for Vehicle
-                            Re-Identification</h4>
-                    </div>
-                    <p class="paper-authors">Mingchen Deng, Ziyao Tang, and Guoqiang Xiao</p>
-                    <div class="paper-type conference">Conference Track</div>
-                </div>
-                <!-- paper 5 -->
-                <div class="paper-item conference">
-                    <div class="paper-info">
-                        <h4 class="paper-title">Breaking the Single-Stage Barrier: Synergistic Data-Model Adaptation at
-                            Test-Time for Medical Image Segmentation</h4>
-                    </div>
-                    <p class="paper-authors">Wenjuan Zhou, Wei Chen, Yulin He, Di Wu, and Chen Li</p>
-                    <div class="paper-type conference">Conference Track</div>
-                </div>
-                <!-- paper 6 -->
-                <div class="paper-item journal">
-                    <div class="paper-info">
-                        <h4 class="paper-title">Region-Aware Sparse Attention Network for Lane Detection</h4>
-                    </div>
-                    <p class="paper-authors">Yan Deng and Guoqiang Xiao</p>
-                    <div class="paper-type journal">Journal Track</div>
-                </div>
+            <!-- paper 2 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Learning Transformation-Isomorphic
+                  Latent Space for Accurate Hand Pose Estimation</h4>
+              </div>
+              <p class="paper-authors">Kaiwen Ren, Lei Hu, Zhiheng Zhang,
+                Yongjing Ye, and Shihong Xia</p>
+              <div class="paper-type conference">Conference Track</div>
             </div>
+            <!-- paper 3 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Skeletal Gesture Recognition Based on
+                  Joint Spatio-Temporal and Multi-Modal Learning</h4>
+              </div>
+              <p class="paper-authors">Zhijing Yu, Zhongjie Zhu, Di Ge, Renwei
+                Tu, Yongqiang Bai, Yueping Yang, and Yuer Wang</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Global-Local Complementary
+                  Representation Network for Vehicle Re-Identification</h4>
+              </div>
+              <p class="paper-authors">Mingchen Deng, Ziyao Tang, and Guoqiang
+                Xiao</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Breaking the Single-Stage Barrier:
+                  Synergistic Data-Model Adaptation at Test-Time for Medical
+                  Image Segmentation</h4>
+              </div>
+              <p class="paper-authors">Wenjuan Zhou, Wei Chen, Yulin He, Di Wu,
+                and Chen Li</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 6 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Region-Aware Sparse Attention Network
+                  for Lane Detection</h4>
+              </div>
+              <p class="paper-authors">Yan Deng and Guoqiang Xiao</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Break & Demo -->
-    <div class="program-item">
+      </div>
+      <!-- Break & Demo -->
+      <div class="program-item">
         <div class="time-slot">15:10 – 15:40</div>
         <div class="event">
-            <div class="event-content">Break & Demo</div>
+          <div class="event-content">Break &amp; Demo</div>
         </div>
-    </div>
-
-    <div class="program-divider"></div>
-    <!-- session 3,4 -->
-    <div class="schedule-item">
+      </div>
+      <div class="program-divider"></div>
+      <!-- session 3,4 -->
+      <div class="schedule-item">
         <div class="time-slot">15:40 - </div>
         <div class="event">
-            <div class="event-content">Session 3, 4</div>
+          <div class="event-content">Session 3, 4</div>
         </div>
-
         <!-- session 3 資訊（包含論文列表） -->
         <div class="session">
-            <h3 class="session-title"><strong>Session 3: </strong>Shape Extraction or Editing</h3>
-            <div class="session-info">
-                <p class="location">A2 國際會議廳</p>
+          <h3 class="session-title"><strong><a id="s3">Session 3:</a> </strong>Shape
+            Extraction or Editing</h3>
+          <div class="session-info">
+            <p class="location">A2 International Conference Hall</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Swept Volume Computation with Enhanced
+                  Geometric Detail Preservation </h4>
+              </div>
+              <p class="paper-authors">Pengfei Wang, Yuexin Yang, Shuangmin
+                Chen, Shiqing Xin, Changhe Tu, and Wenping Wang</p>
+              <div class="paper-type journal">Journal Track</div>
             </div>
-
-            <!-- paper list -->
-            <div class="papers-list">
-
-                <!-- paper 1 -->
-                <div class="paper-item journal">
-                    <div class="paper-info">
-                        <h4 class="paper-title">Swept Volume Computation with Enhanced Geometric Detail Preservation
-                        </h4>
-                    </div>
-                    <p class="paper-authors">Pengfei Wang, Yuexin Yang, Shuangmin Chen, Shiqing Xin, Changhe Tu, and
-                        Wenping Wang</p>
-                    <div class="paper-type journal">Journal Track</div>
-                </div>
-                <!-- paper 2 -->
-                <div class="paper-item journal">
-                    <div class="paper-info">
-                        <h4 class="paper-title">PaMO: Parallel Mesh Optimization for Intersection-Free Low-Poly Modeling
-                            on the GPU</h4>
-                    </div>
-                    <p class="paper-authors">Seonghun Oh, Xiaodi Yuan, Xinyue Wei, Ruoxi Shi, Fanbo Xiang, Minghua Liu,
-                        and Hao Su</p>
-                    <div class="paper-type journal">Journal Track</div>
-                </div>
-                <!-- paper 3 -->
-                <div class="paper-item journal">
-                    <div class="paper-info">
-                        <h4 class="paper-title">Computational Design of Body-Supporting Assemblies</h4>
-                    </div>
-                    <p class="paper-authors">Yixuan He, Rulin Chen, Bailin Deng, and Peng Song</p>
-                    <div class="paper-type journal">Journal Track</div>
-                </div>
-                <!-- paper 4 -->
-                <div class="paper-item conference">
-                    <div class="paper-info">
-                        <h4 class="paper-title">Unsupervised 3D Shape Parsing with Primitive Correspondence</h4>
-                    </div>
-                    <p class="paper-authors">Tianshu Zhao, Yanran Guan, and Oliver van Kaick</p>
-                    <div class="paper-type conference">Conference Track</div>
-                </div>
-                <!-- paper 5 -->
-                <div class="paper-item conference">
-                    <div class="paper-info">
-                        <h4 class="paper-title">SPLICE: Part-Level 3D Shape Editing from Local Semantic Extraction to
-                            Global Neural Mixing</h4>
-                    </div>
-                    <p class="paper-authors">Jin Zhou, Hongliang Yang, Pengfei Xu, and Hui Huang</p>
-                    <div class="paper-type conference">Conference Track</div>
-                </div>
+            <!-- paper 2 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">PaMO: Parallel Mesh Optimization for
+                  Intersection-Free Low-Poly Modeling on the GPU</h4>
+              </div>
+              <p class="paper-authors">Seonghun Oh, Xiaodi Yuan, Xinyue Wei,
+                Ruoxi Shi, Fanbo Xiang, Minghua Liu, and Hao Su</p>
+              <div class="paper-type journal">Journal Track</div>
             </div>
+            <!-- paper 3 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Computational Design of Body-Supporting
+                  Assemblies</h4>
+              </div>
+              <p class="paper-authors">Yixuan He, Rulin Chen, Bailin Deng, and
+                Peng Song</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Unsupervised 3D Shape Parsing with
+                  Primitive Correspondence</h4>
+              </div>
+              <p class="paper-authors">Tianshu Zhao, Yanran Guan, and Oliver van
+                Kaick</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">SPLICE: Part-Level 3D Shape Editing from
+                  Local Semantic Extraction to Global Neural Mixing</h4>
+              </div>
+              <p class="paper-authors">Jin Zhou, Hongliang Yang, Pengfei Xu, and
+                Hui Huang</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
         </div>
         <!-- session 4 資訊（包含論文列表） -->
         <div class="session">
-            <h3 class="session-title"><strong>Session 4: </strong>Interaction & Visualization</h3>
-            <div class="session-info">
-                <p class="location">A301</p>
+          <h3 class="session-title"><strong><a id="s4">Session 4:</a> </strong>Interaction
+            &amp; Visualization</h3>
+          <div class="session-info">
+            <p class="location">A301 Multifunctional Room</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">CoSketcher: Collaborative and Iterative
+                  Sketch Generation with LLMs under Linguistic and Spatial
+                  Control</h4>
+              </div>
+              <p class="paper-authors">Liwen Mei, Manhao Guan, Yifan Zheng, and
+                Dongliang Zhang</p>
+              <div class="paper-type conference">Conference Track</div>
             </div>
-
-            <!-- paper list -->
-            <div class="papers-list">
-
-                <!-- paper 1 -->
-                <div class="paper-item conference">
-                    <div class="paper-info">
-                        <h4 class="paper-title">CoSketcher: Collaborative and Iterative Sketch Generation with LLMs
-                            under Linguistic and Spatial Control</h4>
-                    </div>
-                    <p class="paper-authors">Liwen Mei, Manhao Guan, Yifan Zheng, and Dongliang Zhang</p>
-                    <div class="paper-type conference">Conference Track</div>
-                </div>
-                <!-- paper 2 -->
-                <div class="paper-item conference">
-                    <div class="paper-info">
-                        <h4 class="paper-title">Easy Modeling of Man-Made Shapes in Virtual Reality</h4>
-                    </div>
-                    <p class="paper-authors">Haoyu Tang, Fancheng Gao, Kenny Tsu Wei Choo, Bernd Bickel, and Peng Song
-                    </p>
-                    <div class="paper-type conference">Conference Track</div>
-                </div>
-                <!-- paper 3 -->
-                <div class="paper-item conference">
-                    <div class="paper-info">
-                        <h4 class="paper-title">ChromBrain Wall: A Virtual Reality Game Featuring Customized Full-Body
-                            Movement for Long-Term Physical and Cognitive Training in Older Adults</h4>
-                    </div>
-                    <p class="paper-authors">Hao Wu, Juanjuan Zhao, Aoyu Li, and Yan Qiang</p>
-                    <div class="paper-type conference">Conference Track</div>
-                </div>
-                <!-- paper 4 -->
-                <div class="paper-item conference">
-                    <div class="paper-info">
-                        <h4 class="paper-title">C2Views: Knowledge-based Colormap Design for Multiple-View Consistency
-                        </h4>
-                    </div>
-                    <p class="paper-authors">Yihan Hou, Yilin Ye, Liangwei Wang, Huamin Qu, and Wei Zeng</p>
-                    <div class="paper-type conference">Conference Track</div>
-                </div>
-                <!-- paper 5 -->
-                <div class="paper-item conference">
-                    <div class="paper-info">
-                        <h4 class="paper-title">Structural Entropy Based Visualization of Social Networks</h4>
-                    </div>
-                    <p class="paper-authors">Mingliang Xue, Lu Chen, Chunyu Wei, Shuowei Hou, Lizhen Cui, Oliver
-                        Deussen, and Yunhai Wang</p>
-                    <div class="paper-type conference">Conference Track</div>
-                </div>
-                <!-- paper 6 -->
-                <div class="paper-item conference">
-                    <div class="paper-info">
-                        <h4 class="paper-title">CMI-MTL: Cross-Mamba interaction based multi-task learning for medical
-                            visual question answering</h4>
-                    </div>
-                    <p class="paper-authors">Qiangguo Jin, Xianyao Zheng, Hui Cui, Changming Sun, Yuqi Fang, Cong Cong,
-                        Ran Su, Leyi Wei, Ping Xuan, and Junbo Wang</p>
-                    <div class="paper-type conference">Conference Track</div>
-                </div>
-
+            <!-- paper 2 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Easy Modeling of Man-Made Shapes in
+                  Virtual Reality</h4>
+              </div>
+              <p class="paper-authors">Haoyu Tang, Fancheng Gao, Kenny Tsu Wei
+                Choo, Bernd Bickel, and Peng Song </p>
+              <div class="paper-type conference">Conference Track</div>
             </div>
+            <!-- paper 3 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">ChromBrain Wall: A Virtual Reality Game
+                  Featuring Customized Full-Body Movement for Long-Term Physical
+                  and Cognitive Training in Older Adults</h4>
+              </div>
+              <p class="paper-authors">Hao Wu, Juanjuan Zhao, Aoyu Li, and Yan
+                Qiang</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">C2Views: Knowledge-based Colormap Design
+                  for Multiple-View Consistency </h4>
+              </div>
+              <p class="paper-authors">Yihan Hou, Yilin Ye, Liangwei Wang,
+                Huamin Qu, and Wei Zeng</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Structural Entropy Based Visualization
+                  of Social Networks</h4>
+              </div>
+              <p class="paper-authors">Mingliang Xue, Lu Chen, Chunyu Wei,
+                Shuowei Hou, Lizhen Cui, Oliver Deussen, and Yunhai Wang</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 6 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">CMI-MTL: Cross-Mamba interaction based
+                  multi-task learning for medical visual question answering</h4>
+              </div>
+              <p class="paper-authors">Qiangguo Jin, Xianyao Zheng, Hui Cui,
+                Changming Sun, Yuqi Fang, Cong Cong, Ran Su, Leyi Wei, Ping
+                Xuan, and Junbo Wang</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Reception -->
-    <div class="program-item">
+      </div>
+      <!-- Reception -->
+      <div class="program-item">
         <div class="time-slot">18:30 – 20:00</div>
         <div class="event">
-            <div class="event-content">Reception</div>
+          <div class="event-content">Reception</div>
         </div>
-    </div>
-
-    <div class="program-divider"></div>
-
-
-
-
-
-
-
-</body>
-
+      </div>
+      <!-- Day2 -->
+      <div class="schedule-header">
+        <h2><a id="day2">Wednesday, October 15, 2025</a></h2>
+      </div>
+      <!-- session 5, 6 -->
+      <div class="schedule-item">
+        <div class="time-slot">10:40 – 12:00</div>
+        <div class="event">
+          <div class="event-content">Session 5,6</div>
+        </div>
+        <!-- session 5 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s5">Session 5:</a> </strong>Points
+            &amp; Gaussians</h3>
+          <div class="session-info">
+            <p class="location">A2 International Conference Hall</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">G-SplatGAN: Disentangled 3D Gaussian
+                  Generation for Complex Shapes via Multi-Scale Patch
+                  Discriminators</h4>
+                <i class="fa-solid fa-laptop-house remote-icon journal"></i> </div>
+              <p class="paper-authors">Jiaqi Li, Haochuan Dang, Zhi Zhou, Junke
+                Zhu, and Zhangjin Huang</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">GS-Share: Enabling High-fidelity Map
+                  Sharing with Incremental Gaussian Splatting</h4>
+              </div>
+              <p class="paper-authors">Xinran Zhang, Hanqi Zhu, Yifan Duan, and
+                Yanyong Zhang</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Introducing Unbiased Depth into 2D
+                  Gaussian Splatting for High-accuracy Surface Reconstruction</h4>
+              </div>
+              <p class="paper-authors">Yixin Yang, Yang Zhou, and Hui Huang</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">GNF: Gaussian Neural Fields for
+                  Multidimensional Signal Representation and Reconstruction</h4>
+              </div>
+              <p class="paper-authors">Abelaziz Bouzidi, Hamid Laga, Hazem
+                Wannous, and Ferdous Sohel</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">CGS: Continual Gaussian Splatting for
+                  Evolving 3D Scene Reconstruction</h4>
+              </div>
+              <p class="paper-authors">Shuojin Yang, Haoxiang Chen, and Taijiang
+                Mu</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
+        </div>
+        <!-- session 6 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s6">Session 6:</a> </strong>Reconstruction</h3>
+          <div class="session-info">
+            <p class="location">A301 Multifunctional Room</p>
+            <!-- <p class="chair"></p> --> </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">BoxFusion: Reconstruction-Free
+                  Open-Vocabulary 3D Object Detection via Real-Time Multi-View
+                  Box Fusion</h4>
+              </div>
+              <p class="paper-authors">Yuqing Lan, Chenyang Zhu, Zhirui Gao,
+                Jiazhao Zhang, Yihan Cao, Renjiao Yi, Yijie Wang, and Kai Xu</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Joint Deblurring and 3D Reconstruction
+                  for Macrophotography</h4>
+              </div>
+              <p class="paper-authors">Yifan Zhao, Liangchen Li, Yuqi Zhou, Kai
+                Wang, Yan Liang, and Juyong Zhang</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item journal">
+              <div class="paper-info journal">
+                <h4 class="paper-title">Automatic Reconstruction of Woven Cloth
+                  from a Single Close-up Image </h4>
+              </div>
+              <p class="paper-authors">Chenghao Wu, Apoorv Khattar, Junqiu Zhu,
+                Steve Pettifer, Lingqi Yan, and Zahra Montazeri</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">GaussFluids: Reconstructing Lagrangian
+                  Fluid Particles from Videos via Gaussian Splatting</h4>
+              </div>
+              <p class="paper-authors">Feilong Du, Yalan Zhang, Yihang Ji,
+                Xiaokun Wang, Chao Yao, Jiri Kosinka, Steffen Frey, Alexandru
+                Telea, and Xiaojuan Ban</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item TVCG">
+              <div class="paper-info">
+                <h4 class="paper-title">Unified Smooth Vector Graphics: Modeling
+                  Gradient Meshes and Curve-based Approaches Jointly as Poisson
+                  Problem</h4>
+                <i class="fa-solid fa-laptop-house remote-icon TVCG"></i> </div>
+              <p class="paper-authors">Xingze Tian and Tobias Gunther</p>
+              <div class="paper-type TVCG">TVCG</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Lunch -->
+      <div class="program-item">
+        <div class="time-slot">12:20 - 13:30</div>
+        <div class="event">
+          <div class="event-content">Lunch</div>
+        </div>
+      </div>
+      <div class="program-divider"></div>
+      <!-- session 7,8 -->
+      <div class="schedule-item">
+        <div class="time-slot">13:30 – 15:10</div>
+        <div class="event">
+          <div class="event-content">Session 7, 8</div>
+        </div>
+        <!-- session 7 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s7">Session 7:</a> </strong>Lines,
+            Surfaces &amp; Fields</h3>
+          <div class="session-info">
+            <p class="location">A301 Multifunctional Room</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Projective Displacement Mapping for Ray
+                  Traced Editable Surfaces </h4>
+              </div>
+              <p class="paper-authors">Rama Hoetzlein</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Single-Line Drawing Vectorization</h4>
+              </div>
+              <p class="paper-authors">Tanguy Magne and Olga Sorkine-Hornung</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title"> Accelerating Signed Distance Functions</h4>
+              </div>
+              <p class="paper-authors">Pierre Hubert-Brierre, Eric Guérin,
+                Adrien Peytavie, and Eric Galin</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">FlatCAD: Fast Curvature Regularization
+                  of Neural SDFs for CAD Models </h4>
+              </div>
+              <p class="paper-authors">Haotian Yin, Aleksander Plocharski,
+                Michal Jan Wlodarczyk, Mikolaj Kida, and Przemyslaw Musialski</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">RT-HDIST: Ray-Tracing Core-based
+                  Hausdorff Distance Computation</h4>
+              </div>
+              <p class="paper-authors">YoungWoo Kim, Jaehong Lee, and Duksu Kim</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+          </div>
+        </div>
+        <!-- session 8 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s8">Session 8:</a> </strong>Physical
+            Simulation</h3>
+          <div class="session-info">
+            <p class="location">A302 Multifunctional Room</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">DiffQN: Differentiable Quasi-Newton
+                  Method for Elastodynamics</h4>
+              </div>
+              <p class="paper-authors">Youshuai Cai, Chen Li, Haichuan Song,
+                Youchen Xie, ChangBo Wang</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">PC-NCLaws: Physics-Embedded Conditional
+                  Neural Constitutive Laws for Elastoplastic Materials</h4>
+              </div>
+              <p class="paper-authors">Xueguang Xie, Shu Yan, Shiwen Jia, Siyu
+                Yang, Aimin Hao, Yang Gao, and Peng Yu</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Parallel Constraint Graph Partitioning
+                  and Coloring for Realtime Soft-Body Cutting</h4>
+              </div>
+              <p class="paper-authors">Peng Yu, Ruiqi Wang, Chunlei Li, Yuxuan
+                Li, Xiao Zhai, Yuanbo He, Hongyu Wu, Aimin Hao, and Yang Gao</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">FlowCapX: Physics-Grounded Flow Capture
+                  with Long-Term Consistency </h4>
+              </div>
+              <p class="paper-authors">Ningxiao Tao, Liru Zhang, Xingyu Ni,
+                Mengyu Chu, and Baoquan Chen</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Fast Multi-Body Coupling for Underwater
+                  Interactions</h4>
+              </div>
+              <p class="paper-authors">Tianhong Gao, Xuwen Chen, Xingqiao Li,
+                Wei Li, Baoquan Chen, Zherong Pan, Kui Wu, and Mengyu Chu</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 6 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">An Adaptive Particle Fission-Fusion
+                  Approach for Dual-Particle SPH Fluid</h4>
+              </div>
+              <p class="paper-authors">Shusen Liu, Yuzhong Guo, Ying Qiao, and
+                Xiaowei He</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Break & Poster -->
+      <div class="program-item">
+        <div class="time-slot">15:10 – 15:40</div>
+        <div class="event">
+          <div class="event-content">Break &amp; Poster</div>
+        </div>
+      </div>
+      <div class="program-divider"></div>
+      <!-- session 9, 10 -->
+      <div class="schedule-item">
+        <div class="time-slot">15:40 –</div>
+        <div class="event">
+          <div class="event-content">Session 9, 10</div>
+        </div>
+        <!-- session 9 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s9">Session 9:</a> </strong>Graphic
+            &amp; Artistic designs</h3>
+          <div class="session-info">
+            <p class="location">A301 Multifunctional Room</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">LayoutRectifier: An Optimization-based
+                  Post-processing for Graphic Design Layout Generation</h4>
+              </div>
+              <p class="paper-authors">I-Chao Shen, Ariel Shamir, and Takeo
+                Igarashi</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Neural Shadow Art</h4>
+              </div>
+              <p class="paper-authors">Caoliwen Wang, Bailin Deng, and Juyong
+                Zhang</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Reducing Visible Staircasing Artifacts
+                  Through Printing Orientation Using a Perception-Driven Metric</h4>
+              </div>
+              <p class="paper-authors">Mehmet Ata Yurtsever and Piotr Didyk</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">View-Independent Wire Art Modeling via
+                  Manifold Fitting</h4>
+              </div>
+              <p class="paper-authors">HuiGuang Huang, Dong-Yi Wu, Yulin Wang,
+                Yu Cao, and Tong-Yee Lee</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item TVCG">
+              <div class="paper-info">
+                <h4 class="paper-title">AnimeDiffusion: Anime diffusion
+                  colorization</h4>
+              </div>
+              <p class="paper-authors">Yu Cao, Xiangqiao Meng, P. Y. Mok,
+                Tong-Yee Lee, Xueting Liu and Ping Li</p>
+              <div class="paper-type TVCG">TVCG</div>
+            </div>
+          </div>
+        </div>
+        <!-- session 10 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s10">Session 10:</a> </strong>Image
+            Creation &amp; Augmentation</h3>
+          <div class="session-info">
+            <p class="location">A302 Multifunctional Room</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Latent Interpretation for Diffusion
+                  Autoencoders via Integrated Semantic Reconstruction</h4>
+              </div>
+              <p class="paper-authors">Yixuan Ju, Xuan Tan, Zhenyang Zhu, Jiyi
+                Li, and Xiaoyang Mao</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">DAATSim: Depth-Aware Atmospheric
+                  Turbulence Simulation for Fast Image Rendering</h4>
+              </div>
+              <p class="paper-authors">Ripon Kumar Saha, Yufan Zhang, Jinwei Ye,
+                and Suren Jayasuriya</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Using Saliency for Semantic Image
+                  Abstractions in Robotic Painting </h4>
+              </div>
+              <p class="paper-authors">Michael Stroh, Patrick Paetzold, Daniel
+                Berio, Rebecca Kehlbeck, Frederic Fol Leymarie, Oliver Deussen,
+                and Noura Faraj</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Feature Disentanglement in GANs for
+                  Photorealistic Multi-view Hair Transfer</h4>
+              </div>
+              <p class="paper-authors">Jiayi Xu, Zhengyang Wu, Chenming Zhang,
+                Xiaogang Jin, and Yaohua Ji</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">KIN-FDNet: Dual-Branch KAN-INN
+                  Decomposition Network for Multi-Modality Image Fusion</h4>
+              </div>
+              <p class="paper-authors">Aimei Dong, Hao Meng, and Zhen Chen</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Day3 -->
+      <div class="schedule-header">
+        <h2><a id="day3">Thursday, October 16, 2025</a></h2>
+      </div>
+      <!-- session 11, 12 -->
+      <div class="schedule-item">
+        <div class="time-slot">10:40 – 12:00</div>
+        <div class="event">
+          <div class="event-content">Session 11, 12</div>
+        </div>
+        <!-- session 11 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s11">Session 11:</a> </strong>Exploiting
+            Gaussians</h3>
+          <div class="session-info">
+            <p class="location">A2 International Conference Hall</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">WaterGS: Physically-Based Imaging in
+                  Gaussian Splatting for Underwater Scene Reconstruction</h4>
+              </div>
+              <p class="paper-authors">Su Qing Wang, Wen Bin Wu, Min Shi, Zhao
+                Xin Li, Qi Wang, and Deng Ming Zhu</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">LucidFusion: Reconstructing 3D Gaussians
+                  with Arbitrary Unposed Images</h4>
+              </div>
+              <p class="paper-authors">Hao He, Yixun Liang, Luozhou Wang,
+                Yuanhao Cai, Xinli Xu, Haoxiang Guo, Xiang Wen, and Yingcong
+                Chen</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Gaussians on their Way:
+                  Wasserstein-Constrained 4D Gaussian Splatting with State-Space
+                  Modeling </h4>
+              </div>
+              <p class="paper-authors">Junli Deng, Ping Shi, Yihao Luo, and
+                Qipei Li</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Gaussian Splatting for Large-Scale
+                  Aerial Scene Reconstruction From Ultra-HighResolution Images</h4>
+              </div>
+              <p class="paper-authors">Qiulin Sun, Wei Lai, Yixian Li, and Yanci
+                Zhang</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">GaussianMatch: Adaptive Learning
+                  Continuous Surfaces for Light Field Depth Estimation</h4>
+              </div>
+              <p class="paper-authors">Zexin Sun, Rongshan Chen, Yu Wang,
+                Zhenglong Cui, Da Yang, Siyang Li, Xuefei Huang, and Hao Sheng</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
+        </div>
+        <!-- session 12 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s12">Session 12:</a> </strong>Digital
+            Clothing</h3>
+          <div class="session-info">
+            <p class="location">A301 Multifunctional Room</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Self-Supervised Humidity-Controllable
+                  Garment Simulation via Capillary Bridge Modeling</h4>
+              </div>
+              <p class="paper-authors">Min Shi, Xinran Wang, Jia-Qi Zhang, Lin
+                Gao, Dengming Zhu, and Hongyan Zhang</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Hybrid Retrieval-Regression for
+                  Motion-Driven Loose-Fitting Garment Animation</h4>
+              </div>
+              <p class="paper-authors">Myeongjin Lee, Emmanuel Ian Libao, and
+                Sung-Hee Lee</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Frequency-Guided Self-Supervised
+                  Wind-Driven Garment Animation Simulation</h4>
+              </div>
+              <p class="paper-authors">Min Shi, Zhenyu Li, Tianlu Mao, Dengming
+                Zhu, and Suqing Wang</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Real-Time Per-Garment Virtual Try-On
+                  with Temporal Consistency for Loose-Fitting Garments</h4>
+              </div>
+              <p class="paper-authors">Zaiqiang Wu, I-Chao Shen, and Takeo
+                Igarashi</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">ClothingTwin: Reconstructing Inner and
+                  Outer Layers of Clothing Using 3D Gaussian Splatting</h4>
+              </div>
+              <p class="paper-authors">Munkyung Jung, Dohae Lee, and In-Kwon Lee</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Lunch -->
+      <div class="program-item">
+        <div class="time-slot">12:20 - 13:30</div>
+        <div class="event">
+          <div class="event-content">Lunch</div>
+        </div>
+      </div>
+      <div class="program-divider"></div>
+      <!-- session 13, 14 -->
+      <div class="schedule-item">
+        <div class="time-slot">14:30 – 15:30</div>
+        <div class="event">
+          <div class="event-content">Session 13, 14</div>
+        </div>
+        <!-- session 13 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s13">Session 13:</a> </strong>Enhancing
+            Images</h3>
+          <div class="session-info">
+            <p class="location">A301 Multifunctional Room</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Hybrid Sparse Transformer and Feature
+                  Alignment for Efficient Image Completion</h4>
+              </div>
+              <p class="paper-authors">L. Chen and Hao Sun</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Region-Adaptive Low-Light Image
+                  Enhancement with Light Effect Suppression and Detail
+                  Preservation</h4>
+              </div>
+              <p class="paper-authors">Liheng Luo, Wantong Xie, Xiushan Xia,
+                Zerui Li, and Yunbo Zhao</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Image Reflection Separation via Adaptive
+                  Residual Correction and Feature Interaction Enhancement</h4>
+              </div>
+              <p class="paper-authors">Weijian Ke and Yijun Mo</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">ER-Diff: A Multi-Scale Exposure
+                  Residual-Guided Diffusion Model for Image Exposure Correction</h4>
+              </div>
+              <p class="paper-authors">TianZhen Chen, Jie Liu, and Yi Ru</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
+        </div>
+        <!-- session 14 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s14">Session 14:</a> </strong>Vehicle
+            Dynamics and Interactions</h3>
+          <div class="session-info">
+            <p class="location">A302 Multifunctional Room</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Animating Vehicles Risk-Aware
+                  Interaction with Pedestrians Using Deep Reinforcement Learning</h4>
+              </div>
+              <p class="paper-authors">Hao-Ming Tsai and Sai-Keung Wong</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Traffic Flow Reconstruction Using
+                  Two-Stage Optimization Based on Microscopic and Macroscopic
+                  Features</h4>
+              </div>
+              <p class="paper-authors">Jung-Hao Huang, Bo-Yun Lai, Sai-Keung
+                Wong, and Wen-Chieh Lin</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">HiLo-Align: A Hierarchical Semantic
+                  Alignment Framework for Driving Decision Generation via
+                  Virtual-Physical Integration</h4>
+              </div>
+              <p class="paper-authors">Zehao Duan, Chengyan Huang, and Lin Wang</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Animating Multi-Vehicle Interactions in
+                  Traffic Conflict Zones Using Operational Plans</h4>
+              </div>
+              <p class="paper-authors">Feng-Jui Chang, Sai-Keung Wong, Bo-Rui
+                Huang, and Wen-Chieh Lin</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Break & Poster -->
+      <div class="program-item">
+        <div class="time-slot">15:30 – 16:00</div>
+        <div class="event">
+          <div class="event-content">Break &amp; Poster</div>
+        </div>
+      </div>
+      <div class="program-divider"></div>
+      <!-- session 15, 16 -->
+      <div class="schedule-item">
+        <div class="time-slot">16:00 –</div>
+        <div class="event">
+          <div class="event-content">Session 15, 16</div>
+        </div>
+        <!-- session 15 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s15">Session 15:</a> </strong>3D
+            Reconstruction</h3>
+          <div class="session-info">
+            <p class="location">A301 Multifunctional Room</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Preconditioned Deformation Grids</h4>
+              </div>
+              <p class="paper-authors">Julian Kaltheuner, Alexander Oebel,
+                Hannah Droege, Patrick Stotko, and Reinhard Klein</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Uncertainty-Aware Adjustment via
+                  Learnable Coefficients for Detailed 3D Reconstruction of
+                  Clothed Humans from Single Images</h4>
+              </div>
+              <p class="paper-authors">Yadan Yang, Yunze Li, Fangli Ying, Aniwat
+                Phaphuangwittayakul, and Riyad Dhuny</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">VF-Plan: Bridging the Art Gallery
+                  Problem and Static LiDAR Scanning with Visibility Field
+                  Optimization</h4>
+              </div>
+              <p class="paper-authors">Biao Xiong, LongJun Zhang, Ruiqi Huang,
+                Junwei Zhou, Syed Riaz un Nabi Jafri, Bojian Wu, and Fashuai Li</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Generating 3D Hair Strips from Partial
+                  Strands using Diffusion Model </h4>
+              </div>
+              <p class="paper-authors">Gyeongmin Lee, Wonjong Jang, and
+                Seungyong Lee</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Attention-Guided Multi-scale Neural Dual
+                  Contouring</h4>
+              </div>
+              <p class="paper-authors">Fuli Wu, Chaoran Hu, Wenxuan Li, and
+                Pengyi Hao</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
+        </div>
+        <!-- session 16 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s16">Session 16:</a> </strong>Rendering
+            &amp; Inverse Rendering</h3>
+          <div class="session-info">
+            <p class="location">A302 Multifunctional Room</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">TensoIS: A Step Towards Feed-Forward
+                  Tensorial Inverse Subsurface Scattering for Perlin Distributed
+                  Heterogeneous Media</h4>
+              </div>
+              <p class="paper-authors">Ashish Tiwari, Satyam Bhardwaj, Yash
+                Bachwana, Parag Sarvoday Sahu, T. M. Feroz Ali, Bhargava
+                Chintalapati, and Shanmuganathan Raman</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">LTC-IR: Multiview Edge-Aware Inverse
+                  Rendering with Linearly Transformed Cosines</h4>
+              </div>
+              <p class="paper-authors">Dabeen Park, Junsuh Park, Jooeun Son,
+                Seungyong Lee, and Joo Ho Lee</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Uni-IR: One Stage is Enough for
+                  Ambiguity-Reduced Inverse Rendering </h4>
+              </div>
+              <p class="paper-authors">Wenhang Ge, Jiawei Feng, Guibao Shen, and
+                Ying-Cong Chen</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">By-Example Synthesis of Vector Textures</h4>
+              </div>
+              <p class="paper-authors">Christopher Palazzolo, Oliver van Kaick,
+                and David Mould</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Motion Vector-Based Frame Generation for
+                  Real-Time Rendering</h4>
+              </div>
+              <p class="paper-authors">Inwoo Ha, Young Chun Ahn, and Sung-eui
+                Yoon</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Day4 -->
+      <div class="schedule-header">
+        <h2><a id="day4">Friday, October 17, 2025</a></h2>
+      </div>
+      <!-- session 17, 18 -->
+      <div class="schedule-item">
+        <div class="time-slot">09:00 – 10:20</div>
+        <div class="event">
+          <div class="event-content">Session 17, 18</div>
+        </div>
+        <!-- session 17 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s17">Session 17:</a> </strong>Stylization
+            &amp; Retrieval</h3>
+          <div class="session-info">
+            <p class="location">A2 International Conference Hall</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">StyleMM: Stylized 3D Morphable Face
+                  Model via Text Driven Aligned Image Translation</h4>
+              </div>
+              <p class="paper-authors">Seungmi Lee, Kwan Yun, and Junyong Noh</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">SPG: Style-Prompting Guidance for
+                  Style-Specific Content Creation </h4>
+              </div>
+              <p class="paper-authors">Qian Liang, Zichong Chen, Yang Zhou, and
+                Hui Huang</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Improved 3D Scene Stylization via
+                  Text-Guided Generative Image Editing with RegionBased Control</h4>
+              </div>
+              <p class="paper-authors">Haruo Fujiwara, Yusuke Mukuta, and
+                Tatsuya Harada</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">PF-UCDR: A Local-Aware RGB-Phase Fusion
+                  Network with Adaptive Prompts for Universal Cross-Domain
+                  Retrieval</h4>
+              </div>
+              <p class="paper-authors">Yiqi Wu, Ronglei Hu, Huachao Wu, Fazhi
+                He, and Dejun Zhang</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
+        </div>
+        <!-- session 18 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s18">Session 18:</a> </strong>Character
+            Animation</h3>
+          <div class="session-info">
+            <p class="location">A301 Multifunctional Room</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">EmoDiffGes: Emotion-Aware Co-Speech
+                  Holistic Gesture Generation with Progressive Synergistic
+                  Diffusion</h4>
+              </div>
+              <p class="paper-authors">Xinru Li, Jingzhong Lin, Bohao Zhang,
+                Yuanyuan Qi, Changbo Wang, and Gaoqi He</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">SMACC: Sketching Motion for Articulated
+                  Characters with Comics-based annotations</h4>
+              </div>
+              <p class="paper-authors">Amandine Legrand, Amal Dev Parakkat, and
+                Damien Rohmer</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">B2F: End-to-End Body-to-Face Motion
+                  Generation with Style Reference </h4>
+              </div>
+              <p class="paper-authors">Bokyung Jang, Eunho Jung, and Yoonsang
+                Lee</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">A Region-Based Facial Motion Analysis
+                  and Retargeting Model for 3D Characters</h4>
+              </div>
+              <p class="paper-authors">ChangAn Zhu, Sima Soltanpour, and Chris
+                Joslin</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Trajectory-guided Anime Video Synthesis
+                  via Effective Motion Learning</h4>
+              </div>
+              <p class="paper-authors">Jian Lin, Chengze Li, Haoyun Qin, Hanyuan
+                Liu, Xueting Liu, Xin Ma, Cunjian Chen, and Tien-Tsin Wong</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Break -->
+      <div class="program-item">
+        <div class="time-slot">10:20 – 10:40</div>
+        <div class="event">
+          <div class="event-content">Break</div>
+        </div>
+      </div>
+      <div class="program-divider"></div>
+      <!-- session 19, 20 -->
+      <div class="schedule-item">
+        <div class="time-slot">10:40 – 12:00</div>
+        <div class="event">
+          <div class="event-content">Session 19, 20</div>
+        </div>
+        <!-- session 19 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s19">Session 19:</a> </strong>Synthetizing
+            3D shapes</h3>
+          <div class="session-info">
+            <p class="location">A2 International Conference Hall</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Procedural Multiscale Geometry Modeling
+                  using Implicit Functions </h4>
+              </div>
+              <p class="paper-authors">Bojja Venu, Adam Bosak, and Juan Raúl
+                Padrón-Griffe</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">MF-SDF: Neural Implicit Surface
+                  Reconstruction using Mixed Incident Illumination and Fourier
+                  Feature Optimization</h4>
+              </div>
+              <p class="paper-authors">Xueyang Zhou, Xukun Shen, and Yong Hu</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">A Solver-Aided Hierarchical Language For
+                  LLM-Driven CAD Design</h4>
+              </div>
+              <p class="paper-authors">Ben T. Jones, Zihan Zhang, Felix
+                Hähnlein, Wojciech Matusik, Maaz Ahmad, Vladimir Kim, and
+                Adriana Schulz</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">TopoGen: Topology-Aware 3D Generation
+                  with Persistence Points</h4>
+              </div>
+              <p class="paper-authors">Jiangbei Hu, Ben Fei, Baixin Xu, Fei Hou,
+                Shengfa Wang, Na Lei, Weidong Yang, Chen Qian, and Ying He</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+          </div>
+        </div>
+        <!-- session 20 資訊（包含論文列表） -->
+        <div class="session">
+          <h3 class="session-title"><strong><a id="s20">Session 20:</a> </strong>Lighting
+            &amp; Rendering</h3>
+          <div class="session-info">
+            <p class="location">A301 Multifunctional Room</p>
+          </div>
+          <!-- paper list -->
+          <div class="papers-list">
+            <!-- paper 1 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">World-Space Direct and Indirect Lighting
+                  Sample Reuse with Persistent Reservoirs</h4>
+              </div>
+              <p class="paper-authors">JunPing Yuan, Chen Wang, Qi Sun, Jie Guo,
+                Jia Bei, Yan Zhang, and Yanwen Guo</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 2 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Iterative Lightmap Updates for Scene
+                  Editing</h4>
+              </div>
+              <p class="paper-authors">Guowei Lu, Christoph Peters, Petr
+                Kellnhofer, and Elmar Eisemann</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 3 -->
+            <div class="paper-item conference">
+              <div class="paper-info">
+                <h4 class="paper-title">Stable Sample Caching for Interactive
+                  Stereoscopic Ray Tracing </h4>
+              </div>
+              <p class="paper-authors">Henrik Philippi, Henrik Wann Jensen, and
+                Jeppe Revall Frisvad</p>
+              <div class="paper-type conference">Conference Track</div>
+            </div>
+            <!-- paper 4 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">High-Performance Elliptical Cone Tracing</h4>
+              </div>
+              <p class="paper-authors">Umut Emre, Aryan Kanak, and Shlomi
+                Steinberg</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+            <!-- paper 5 -->
+            <div class="paper-item journal">
+              <div class="paper-info">
+                <h4 class="paper-title">Geometric Integration for Neural Control
+                  Variates</h4>
+              </div>
+              <p class="paper-authors">Daniel Meister and Takahiro Harada</p>
+              <div class="paper-type journal">Journal Track</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fixed --> </div>
+    <!-- Footer -->
+    <footer class="w3-light-grey w3-container w3-padding-32 w3-center w3-opacity">
+      <p>If you have any questions or suggestions, please contact us by <a href="mailto:pg2025team@gmail.com">pg2025team@gmail.com</a></p>
+      <p> © Pacific Graphics 2025 - All Rights Reserved </p>
+    </footer>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+  </body>
 </html>
-<!-- 範例
-    <div class="paper-item">
-        <h4 class="paper-title"></h4>
-        <p class="paper-authors"></p>
-        <div class="paper-type"></div>
-    </div> -->
