@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600&family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2c3e50;
+    background-color: white;
+}
+.middle-milk{
+    margin: 0 auto;
+    padding: 0 11rem;
+}
+
+/* session 那邊 */
+.schedule-header {
+    background: white;
+    color: rgb(28, 1, 1);
+    padding: 1.5rem;
+    text-align: center;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+}
+
+.schedule-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.3px;
+}
+
+.program-item,
+.schedule-item {
+    margin: 0 0 1rem 0;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.time-slot {
+    background: linear-gradient(135deg, #fcfdff 0%, white 100%);
+    padding: 0.77rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #0f3154;
+    display: flex;
+    align-items: center;
+    padding: 0 auto;
+}
+
+.time-slot::before {
+    content: "🕐";
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.event {
+    padding: 1rem 2rem 0 2rem;
+}
+
+.event-content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.speaker {
+    font-size: 1rem;
+    opacity: 0.9;
+    font: bold;
+    color: crimson;
+    margin: 1rem;
+}
+
+.speaker strong {
+    color: #495057;
+}
+
+.session {
+    padding: 0 10rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    position: relative;
+}
+
+.session::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 12%;
+    width: 76%;
+    border-top: 4px dotted #e9ecef;
+}
+
+.session-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #495057;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+.session-title strong {
+    color: #667eea;
+}
+
+.session-info {
+    margin-bottom: 1.2rem;
+}
+
+.location {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.location::before {
+    content: "📍";
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+}
+
+.papers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.paper-item {
+    padding: 0.5rem 1.3rem;
+    background: #fcfdff;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.paper-item.journal {
+    border-left: 0.5rem solid #ddeeff;
+}
+
+.paper-item.conference {
+    border-left: 0.5rem solid #ffdddd;
+}
+.paper-item.TVCG {
+    border-left: 0.5rem solid #e7ffe7;
+}
+
+.paper-item:hover {
+    background: #e7f1ff;
+    transform: translateX(2px);
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+}
+
+.paper-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+}
+
+.paper-authors {
+    color: #6c757d;
+    font-size: 0.85rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+}
+.paper-info{
+    display: flex;
+}
+.paper-type {
+    display: inline-block;
+    color: black;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+.paper-type.journal {
+    background: #ddeeff;
+}
+
+.paper-type.conference {
+    background: #ffdddd;
+}
+
+.paper-type.TVCG {
+    background: #e7ffe7;
+}
+.fa-solid{
+    font-size: 1.3rem;
+    margin: 0.75rem 0 0 1rem;
+}
+.fa-solid.journal{
+    color: #053667
+}
+.fa-solid.conference{
+    color: #611450
+}
+.fa-solid.TVCG{
+    color: #056764
+}
+
+
+
+.program-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #dee2e6, transparent);
+    margin: 1rem 0;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+
+    .schedule-header {
+        padding: 1rem;
+    }
+
+    .schedule-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .time-slot {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+
+    .event-content {
+        font-size: 1rem;
+    }
+
+    .session-title {
+        font-size: 1rem;
+    }
+
+    .paper-item {
+        padding: 0.8rem;
+    }
+
+    .paper-title {
+        font-size: 0.95rem;
+    }
+
+    .paper-authors {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.25rem;
+    }
+
+    .schedule-header {
+        padding: 0.8rem;
+    }
+
+    .schedule-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .paper-item {
+        padding: 0.6rem;
+    }
+
+    .papers-list {
+        gap: 0.5rem;
+    }
+
+    .location {
+        font-size: 0.8rem;
+    }
+}
+
+
+.paper-item:has(.paper-title:empty) {
+    display: none;
+}
+
+
+.program-item,
+.schedule-item {
+    animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.paper-item:focus-within {
+    outline: 2px solid #667eea;
+    outline-offset: 1px;
+}
+
+
+@media print {
+    body {
+        font-size: 12px;
+    }
+
+    .schedule-header {
+        background: #667eea !important;
+        color: white !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .paper-item {
+        break-inside: avoid;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .paper-item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .time-slot::before,
+    .location::before {
+        display: none;
+    }
+}
