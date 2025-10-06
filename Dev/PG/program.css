@@ -11,9 +11,72 @@ body {
     color: #2c3e50;
     background-color: white;
 }
-.middle-milk{
+
+.middle-milk {
     margin: 0 auto;
     padding: 0 11rem;
+}
+
+/* time table */
+.time-table {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    border: 1px dashed rgb(214, 213, 213);
+    border-collapse: separate;
+    border-spacing: 0.75rem 0.25rem;
+    table-layout: fixed;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+td,
+th {
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    border: 3px solid #e0d6d6;
+    overflow: hidden;
+
+}
+
+th:first-child,
+td:first-child {
+    width: 140px;
+}
+
+.table-date {
+    background-color: #fff;
+}
+
+.table-reg {
+    background-color: #e3f2fd;
+}
+
+.table-keynote-etc {
+    background-color: #fce4ec;
+}
+
+.table-paper {
+    background-color: #e8f5e9;
+}
+
+.table-break {
+    background-color: #f5e6ff;
+}
+
+.table-sikfan {
+    background-color: #fff3e0;
+}
+
+.table-section {
+    width: 5%;
+    border-top: 2px dotted #c2c3c8;
+    border-radius: 1px;
+}
+
+/* 備註 */
+.ps {
+    padding: 0 2rem;
 }
 
 /* session 那邊 */
@@ -51,7 +114,6 @@ body {
     color: #0f3154;
     display: flex;
     align-items: center;
-    padding: 0 auto;
 }
 
 .time-slot::before {
@@ -71,17 +133,6 @@ body {
     color: #495057;
 }
 
-.speaker {
-    font-size: 1rem;
-    opacity: 0.9;
-    font: bold;
-    color: crimson;
-    margin: 1rem;
-}
-
-.speaker strong {
-    color: #495057;
-}
 
 .session {
     padding: 0 10rem;
@@ -151,6 +202,7 @@ body {
 .paper-item.conference {
     border-left: 0.5rem solid #ffdddd;
 }
+
 .paper-item.TVCG {
     border-left: 0.5rem solid #e7ffe7;
 }
@@ -176,13 +228,16 @@ body {
     margin-bottom: 0.6rem;
     line-height: 1.4;
 }
-.paper-info{
+
+.paper-info {
     display: flex;
 }
+
 .paper-type {
     display: inline-block;
     color: black;
     padding: 0.3rem 0.6rem;
+    margin: 0.5rem 0;
     border-radius: 12px;
     font-size: 0.7rem;
     font-weight: 500;
@@ -201,22 +256,49 @@ body {
 .paper-type.TVCG {
     background: #e7ffe7;
 }
-.fa-solid{
+
+/* remote icon */
+.remote-text {
+    display: inline-block;
+    color: black;
+    padding: 0.3rem 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    border: 1px dashed #6264a7;
+}
+
+.fa-solid {
     font-size: 1.3rem;
     margin: 0.75rem 0 0 1rem;
+    display: inline-block;
+    vertical-align: middle;
 }
-.fa-solid.journal{
+
+.fa-solid.journal {
     color: #053667
 }
-.fa-solid.conference{
+
+.fa-solid.conference {
     color: #611450
 }
-.fa-solid.TVCG{
+
+.fa-solid.TVCG {
     color: #056764
 }
 
+.bi-microsoft-teams {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.35rem;
+    margin-left: 1rem;
+    color: #6264A7;
+}
 
-
+/* 那條看不太到的分隔線 */
 .program-divider {
     height: 1px;
     background: linear-gradient(90deg, transparent, #dee2e6, transparent);
@@ -224,10 +306,42 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    body {
-        padding: 0.5rem;
-        font-size: 14px;
+/* ==================== 響應式設計 ==================== */
+
+/* iPad 中型 */
+@media (max-width: 1023px) {
+    .middle-milk {
+        padding: 0 3rem;
+    }
+
+    .session {
+        padding: 0 3rem;
+    }
+
+    .session::after {
+        left: 8%;
+        width: 84%;
+    }
+}
+
+/* iPad mini & 直向 */
+@media (max-width: 767px) {
+
+    .table-section {
+        display: none !important;
+    }
+
+    .middle-milk {
+        padding: 0 1.5rem;
+    }
+
+    .session {
+        padding: 0 1.5rem;
+    }
+
+    .session::after {
+        left: 5%;
+        width: 90%;
     }
 
     .schedule-header {
@@ -240,20 +354,23 @@ body {
 
     .time-slot {
         padding: 0.6rem 0.8rem;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
 
+    .event {
+        padding: 1rem 1.5rem 0 1.5rem;
+    }
 
     .event-content {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .session-title {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .paper-item {
-        padding: 0.8rem;
+        padding: 0.8rem 1rem;
     }
 
     .paper-title {
@@ -263,23 +380,80 @@ body {
     .paper-authors {
         font-size: 0.8rem;
     }
+
+    .fa-solid,
+    .bi-microsoft-teams {
+        font-size: 1.1rem;
+        margin-left: 0.75rem;
+    }
 }
 
+/* 手機 (最大 480px) */
 @media (max-width: 480px) {
-    body {
+    .time-table {
+        border-spacing: 0.4rem 0.2rem;
+    }
+
+    td,
+    th {
         padding: 0.25rem;
+        border-radius: 0.74rem;
+        border: 2px solid #bdb4b4;
+        overflow: hidden;
+    }
+
+    .table-section {
+        display: none !important;
+    }
+
+    .middle-milk {
+        padding: 0 1rem;
+    }
+
+    .session {
+        padding: 0 1rem;
+    }
+
+    .session::after {
+        left: 0;
+        width: 100%;
+        border-top: 2px dotted #e9ecef;
     }
 
     .schedule-header {
         padding: 0.8rem;
+        margin: 1rem auto;
     }
 
     .schedule-header h2 {
         font-size: 1.3rem;
     }
 
+    .time-slot {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .event {
+        padding: 0.75rem 1rem 0 1rem;
+    }
+
+    .event-content {
+        font-size: 1rem;
+    }
+
+    .speaker {
+        font-size: 0.9rem;
+        margin: 0.75rem;
+    }
+
+    .session-title {
+        font-size: 1.2rem;
+    }
+
     .paper-item {
-        padding: 0.6rem;
+        padding: 0.6rem 0.8rem;
+        border-left-width: 0.3rem;
     }
 
     .papers-list {
@@ -288,38 +462,79 @@ body {
 
     .location {
         font-size: 0.8rem;
+        padding-left: 1rem;
+    }
+
+    .paper-title {
+        font-size: 0.9rem;
+    }
+
+    .paper-authors {
+        font-size: 0.75rem;
+    }
+
+    .paper-type {
+        font-size: 0.65rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .fa-solid,
+    .bi-microsoft-teams {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
     }
 }
 
-
-.paper-item:has(.paper-title:empty) {
-    display: none;
-}
-
-
-.program-item,
-.schedule-item {
-    animation: slideIn 0.4s ease-out;
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
+/* 小手機 (iPhone SE) */
+@media (max-width: 374px) {
+    .time-table {
+        border-spacing: 0.25rem 0.15rem;
+        border-radius: 0.8rem;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .table-section {
+        display: none !important;
+    }
+
+    td,
+    th {
+        padding: 0.25rem;
+        border-radius: 0.7rem;
+        border: 1.3px solid #bdb4b4;
+        overflow: hidden;
+        font-size: 0.5rem;
+
+    }
+
+    .middle-milk {
+        padding: 0 0.75rem;
+    }
+
+    .session {
+        padding: 0 0.75rem;
+    }
+
+    .schedule-header h2 {
+        font-size: 1.1rem;
+    }
+
+    .event-content {
+        font-size: 0.95rem;
+    }
+
+    .session-title {
+        font-size: 1.1rem;
+    }
+
+    .paper-item {
+        padding: 0.5rem;
+    }
+
+    .paper-title {
+        font-size: 0.85rem;
     }
 }
-
-
-.paper-item:focus-within {
-    outline: 2px solid #667eea;
-    outline-offset: 1px;
-}
-
 
 @media print {
     body {
@@ -347,5 +562,13 @@ body {
     .time-slot::before,
     .location::before {
         display: none;
+    }
+
+    .middle-milk {
+        padding: 0 1rem;
+    }
+
+    .session {
+        padding: 0 1rem;
     }
 }
