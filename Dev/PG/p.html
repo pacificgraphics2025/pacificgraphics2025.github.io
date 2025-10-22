@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pacific Graphics 2025</title>
+    <meta name="keyword" content="Computer Graphics">
+    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9VPG1GEGDL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9VPG1GEGDL');
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/pg25.css">
+
+    <link rel="icon" href="img/PG.png" sizes="32x32" type="image/png">
+
+    <script src="js/pg25.js"></script>
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+
+        .num {
+            text-align: right;
+            /* 靠右對齊 */
+            white-space: nowrap;
+            /* 不換行 */
+            font-variant-numeric: tabular-nums;
+            /* 啟用等寬數字 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+    <script>
+        fetch('./navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+
+    <!-- Header -->
+    <header id="" class="w3-container w3-center w3-padding-64">
+    </header>
+
+    <div class="w3-row-padding w3-padding-32 w3-container">
+        <div class="w3-content">
+
+            <span class="container">
+                <h1 class="highlight-red">Program</h1><br>
+            </span>
+
+            <span class="container">
+                <h2 class="highlight-blue">Program Overview</h2>
+            </span>
+
+            <table class="w3-table-all w3-margin-table">
+                <thead class="w3-centered">
+                    <tr>
+                        <th class=""></th>
+                        <th class=""><a href="#day1">10/14 Tue</a></th>
+                        <th class=""><a href="#day2">10/15 Wed</a></th>
+                        <th class=""><a href="#day3">10/16 Thu</a></th>
+                        <th class=""><a href="#day4">10/17 Fri</a></th>
+                    </tr>
+                </thead>
+
+                <tbody class="w3-centered">
+
+                    <!-- Morning -->
+                    <tr>
+                        <td rowspan="4">Morning</td>
+                        <td colspan="4">Registration (2F)<br>(08:30~)</td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-keynote-etc">
+                            Opening &nbsp;(A2)
+                            <br> 09:20 – 09:40
+                            <br>
+                            <br>
+                            <a href="keynote.html#keynote1">Keynote 1</a> &nbsp;(A2)
+                            <br>Tzu Mao Li
+                            <br>09:40 – 10:40
+                        </td>
+                        <td class="table-keynote-etc">
+                            <a href="keynote.html#keynote2">Keynote 2</a> &nbsp;(A2)
+                            <br>Siyu Tang
+                            <br>09:10 – 10:20
+                        </td>
+                        <td class="table-keynote-etc">
+                            <a href="keynote.html#keynote3">Keynote 3</a> &nbsp;(A2)
+                            <br>Young Min Kim
+                            <br>09:10 – 10:20
+                        </td>
+                        <td class="table-paper">
+                            <a href="#s17">Paper S17</a> (A2) <br>
+                            <a href="#s18">Paper S18</a> (A301)
+                            <br> 09:00 – 10:20
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-break">Break<br>10:40 – 11:00</td>
+                        <td class="table-break">Break<br>10:20 – 10:40</td>
+                        <td class="table-break">Break<br>10:20 – 10:40</td>
+                        <td class="table-break">Break<br>10:20 – 10:40</td>
+                    </tr>
+                    <tr>
+                        <td class="table-keynote-etc" style="height: 158.833px;">
+                            <a href="keynote.html#award1">AG Award Talk 1</a> &nbsp;(A2)
+                            <br>Hui Huang
+                            <br>11:00 – 12:00
+                        </td>
+
+                        <td class="table-paper">
+                            <a href="#s5">Paper S5</a> &nbsp;(A2)<br>
+                            <a href="#s6">Paper S6</a> &nbsp;(A301)
+                            <br>10:40 – 12:00
+                        </td>
+                        <td class="table-paper">
+                            <a href="#s11">Paper S11</a> &nbsp;(A2)<br>
+                            <a href="#s12">Paper S12</a> &nbsp;(A301)
+                            <br>10:40 – 12:00
+                        </td>
+                        <td class="table-paper">
+                            <a href="#s19">Paper S19</a> &nbsp;(A2)<br>
+                            <a href="#s20">Paper S20</a> &nbsp;(A301)
+                            <br>10:40 – 12:00
+                        </td>
+                    </tr>
+
+                    <!-- Noon -->
+                    <tr>
+                        <td class="table-section">Noon</td>
+                        <td class="table-sikfan">Lunch<br>12:20 – 13:30</td>
+                        <td class="table-sikfan">Lunch<br>12:20 – 13:30</td>
+                        <td class="table-sikfan">Lunch<br>12:20 – 13:30</td>
+                        <td class="table-keynote-etc">
+                            Best paper award<br>
+                            & Closing<br>
+                            12:10 – 13:00
+                        </td>
+                    </tr>
+
+                    <!-- Afternoon -->
+                    <tr>
+                        <td class="table-section" rowspan="4">Afternoon</td>
+                        <td rowspan="2" colspan="1" class="table-paper">
+                            <a href="#s1">Paper S1</a> &nbsp;A2<br>
+                            <a href="#s2">Paper S2</a> &nbsp;A301
+                            <br>13:30 – 15:10
+                        </td>
+                        <td rowspan="2" colspan="1" class="table-paper">
+                            <a href="#s7">Paper S7</a> &nbsp;A301<br>
+                            <a href="#s8">Paper S8</a> &nbsp;A302
+                            <br>13:30 – 15:10
+                        </td>
+                        <td class="table-keynote-etc">
+                            <a href="keynote.html#award2">AG Award Talk 2</a> &nbsp;(A301)
+                            <br>Kunwoo Lee
+                            <br>13:30 – 14:30
+                        </td>
+                        <td rowspan="6"><br></td>
+                    </tr>
+                    <tr>
+                        <td class="table-paper">
+                            <a href="#s13">Paper S13</a> &nbsp;(A301)<br>
+                            <a href="#s14">Paper S14 </a> &nbsp;(A302)
+                            <br>14:30 – 15:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-break">
+                            Break &
+                            <a href="demo.html">Demo</a>
+                            <br>15:10 - 15:40
+                        </td>
+                        <td class="table-break">
+                            Break &
+                            <a href="poster.html">Poster</a>
+                            <br>15:10 – 15:40
+                        </td>
+                        <td class="table-break">
+                            Break &
+                            <a href="poster.html">Poster</a>
+                            <br>15:30 – 16:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-paper">
+                            <a href="demo.html">Demo</a> &nbsp;(A215)<br>
+                            <a href="#s3">Paper S3</a> &nbsp;(A2)<br>
+                            <a href="#s4">Paper S4</a> &nbsp;(A301)
+                            <br>15:40 -
+                        </td>
+                        <td class="table-paper">
+                            <a href="#s9">Paper S9</a> &nbsp;(A301)<br>
+                            <a href="#s10">Paper S10</a> &nbsp;(A302)<br>
+                            15:40 –
+                        </td>
+                        <td class="table-paper">
+                            <a href="#s15">Paper S15 </a> &nbsp;(A301)<br>
+                            <a href="#s16">Paper S16</a> &nbsp;(A302)<br>
+                            16:00 –
+                        </td>
+                    </tr>
+
+                    <!-- Evening -->
+                    <tr>
+                        <td class="table-section">Evening</td>
+                        <td class="table-sikfan">
+                            Reception<br>
+                            Eatogether Xinyi Restaurant<br>
+                            饗食天堂 台北信義店<br>
+                            ATT 4 FUN 6F, No. 12, Songshou Rd<br>
+                            (<a href="https://maps.app.goo.gl/mumdcBoMyadJtx2GA" target="_blank">google map</a>)
+                            <br>18:30 – 21:00
+                        </td>
+                        <td><br></td>
+
+                        <td class="table-sikfan">
+                            Banquet<br>
+                            <a href="http://www.chinapa.com.tw/menupage/menupage.html" target="_blank">
+                                China Pa Dining & Live Music (B2F)</a>
+                            <br>Shuttle service: first-come, first-served<br>
+                            Please gather at the 1F entrance at 5:50 PM<br>
+                            (<a href="https://maps.app.goo.gl/ypgmYLzdV5dEtrmZ6" target="_blank">google map</a>)<br>
+                            18:30 – 20:00
+                        </td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <ul>
+                <li>
+                    About Presentations: It is recommended to use the <a href="file/PG25_Slides_template.pptx">slide
+                        template</a>.
+                </li>
+                <li>
+                    <span class="pale-blue">&nbsp; Journal Track &nbsp;</span> and <span class="pale-green">&nbsp; TVCG
+                        invited &nbsp;</span>:
+                    15-minute presentation + 5-minute Q&A
+                </li>
+                <li>
+                    <span class="pale-red">&nbsp; Conference Track &nbsp;</span>: 12-minute presentation + 3-minute Q&A
+                </li>
+            </ul>
+
+            <!-- <div class="w3-padding-32 border-bottom">
+                <span>
+                    <h3 class="highlight-gray">Tuesday, October 14, 2025</h3>
+                </span>
+
+                <table class="w3-table-all">
+                    <tbody class="">
+                        <tr>
+                            <td>
+                                <h4>13:30-15:10</h4>
+                                <h4>Session 1, 2</h4>
+                            </td>
+                            <td>
+                                <h4>Session 1: Point Clouds</h4>
+                                Chair: Abdelaziz Bouzidi <br>
+                                Location: A2 International Conference Hall
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h6>IPFNet: Implicit Primitive Fitting for Robust Point Cloud Segmentation</h6>
+                                Shengdi Zhou, Xiaoqiang Zan, and Bin Zhou <br>
+                                <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                <span class="dashed-line">&nbsp; Remote &nbsp;</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h6>FAHNet: Accurate and Robust Normal Estimation for Point Clouds via Frequency-Aware
+                                    Hierarchical Geometry</h6>
+                                Chengwei Wang, Wenming Wu, Yue Fei, Gaofeng Zhang, and Liping Zheng<br>
+                                <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                <span class="dashed-line">&nbsp; Remote &nbsp;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h6>PARC: A Two-Stage Multi-Modal Framework for Point Cloud Completion</h6>
+                                Yujiao Cai and Yuhao Su<br>
+                                <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h6>Multimodal 3D Few-Shot Classification via Gaussian Mixture Discriminant Analysis</h6>
+                                <i class="w3-small w3-margin-bottom">Yiqi Wu, Huachao Wu, Ronglei Hu, Yilin Chen, and Dejun Zhang</i><br>
+                                <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                <span class="dashed-line">&nbsp; Remote &nbsp;</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h6>Distance-Aware Tri-Perspective View for Efficient 3D Perception in Autonomous Driving</h6>
+                                <i class="w3-small">Yutao Tang, Jigang Zhao, Zhengrui Qin, Rui Qiu, Lingying Zhao, Jie Ren, and Guangxi Chen</i><br>
+                                 
+                                <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                <span class="dashed-line">&nbsp; Remote &nbsp;</span>
+                                
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                <h4>Session 2: Detecting & Estimating from images</h4>
+                                Chair: Ko-Chih Wang <br>
+                                Location: A301 Multifunctional Room
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h6></h6>
+                                <br>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div> -->
+            <!--  -->
+            <!-- <div class="w3-padding-32 border-bottom">
+                <span>
+                    <h3 class="highlight-gray">Tuesday, October 14, 2025</h3>
+                </span>
+            </div>
+
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h4>13:30 - 15:10 &nbsp;<b>&nbsp; Session 1, 2</b></h4>
+                </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                            <table class="">
+                                <tbody class="">
+                                    <tr >
+                                        <td colspan="1">
+                                            <h4>Session 1: Point Clouds</h4><br>
+                                            Chair: Abdelaziz Bouzidi <br>
+                                            Location: A2 International Conference Hall
+                                        </td>
+                                        <td colspan="2" class="border-bottom">
+                                            <h6>IPFNet: Implicit Primitive Fitting for Robust Point Cloud Segmentation</h6>
+                                            Shengdi Zhou, Xiaoqiang Zan, and Bin Zhou <br>
+                                            <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                            <span class="dashed-line w3-margin-bottom">&nbsp; Remote &nbsp;</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="border-bottom">
+                                            <h6>FAHNet: Accurate and Robust Normal Estimation for Point Clouds via Frequency-Aware
+                                                Hierarchical Geometry</h6>
+                                            Chengwei Wang, Wenming Wu, Yue Fei, Gaofeng Zhang, and Liping Zheng<br>
+                                            <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                            <span class="dashed-line w3-margin-bottom">&nbsp; Remote &nbsp;</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="border-bottom">
+                                            <h6>PARC: A Two-Stage Multi-Modal Framework for Point Cloud Completion</h6>
+                                            Yujiao Cai and Yuhao Su<br>
+                                            <span class="pale-blue w3-margin-bottom">&nbsp; Journal Track &nbsp;</span>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td></td>
+                                        <td class="border-bottom">
+                                            <h6>Multimodal 3D Few-Shot Classification via Gaussian Mixture Discriminant Analysis</h6>
+                                            <i class="w3-small w3-margin-bottom">Yiqi Wu, Huachao Wu, Ronglei Hu, Yilin Chen, and Dejun Zhang</i><br>
+                                            <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                            <span class="dashed-line w3-margin-bottom">&nbsp; Remote &nbsp;</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="border-bottom">
+                                            <h6>Distance-Aware Tri-Perspective View for Efficient 3D Perception in Autonomous Driving</h6>
+                                            <i class="w3-small">Yutao Tang, Jigang Zhao, Zhengrui Qin, Rui Qiu, Lingying Zhao, Jie Ren, and Guangxi Chen</i><br>
+                                            
+                                            <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                            <span class="dashed-line w3-margin-bottom">&nbsp; Remote &nbsp;</span>
+                                            
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        
+                                        <td >
+                                            <h4>Session 2: Detecting & Estimating from images</h4>
+                                            Chair: Ko-Chih Wang <br>
+                                            Location: A301 Multifunctional Room
+                                        </td>
+                                        <td colspan="2" class="border-bottom">
+                                            <h6>IPFNet: Implicit Primitive Fitting for Robust Point Cloud Segmentation</h6>
+                                            Shengdi Zhou, Xiaoqiang Zan, and Bin Zhou <br>
+                                            <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                            <span class="dashed-line w3-margin-bottom">&nbsp; Remote &nbsp;</span>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Accordion Item #2
+                </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+            </div>
+            </div> -->
+            <!--  -->
+
+            <!-- /////////// -->
+            <div class="w3-content w3-padding-32">
+                <span class="container">
+                    <h2 class="highlight-blue">Daily Program</h2>
+                </span>
+
+                <nav class="w3-padding-24">
+                    <div class="nav nav-tabs " id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">
+                            <h4>Tuesday, October 14</h4>
+                        </button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                            <h4>Wednesday, October 15</h4>
+                        </button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                            <h4>Thursday, October 16</h4>
+                        </button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                            <h4>Friday, October 17</h4>
+                        </button>
+                    </div>
+                </nav>
+
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+<!-- 13:30 - 15:10 &emsp; Session 1, 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        13:30 - 15:10 &emsp; Session 1, 2
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <table class="">
+                                            <tbody class="">
+<!-- session1 -->
+                                                <tr>
+                                                    <td colspan="1">
+                                                        <h4>Session 1: Point Clouds</h4>
+                                                        Chair: Abdelaziz Bouzidi <br>
+                                                        Location: A2 International Conference Hall
+                                                    </td>
+                                                    <td colspan="2" class="border-bottom">
+                                                        <h6>IPFNet: Implicit Primitive Fitting for Robust Point Cloud
+                                                            Segmentation</h6>
+                                                        <i class="w3-small">Shengdi Zhou, Xiaoqiang Zan, and Bin Zhou</i><br>
+                                                        <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>FAHNet: Accurate and Robust Normal Estimation for Point
+                                                            Clouds via Frequency-Aware
+                                                            Hierarchical Geometry</h6>
+                                                        <i class="w3-small">Chengwei Wang, Wenming Wu, Yue Fei, Gaofeng Zhang, and Liping
+                                                        Zheng</i><br>
+                                                        <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>PARC: A Two-Stage Multi-Modal Framework for Point Cloud
+                                                            Completion</h6>
+                                                        <i class="w3-small">Yujiao Cai and Yuhao Su</i><br>
+                                                        <span class="pale-blue w3-margin-bottom">&nbsp; Journal Track
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>Multimodal 3D Few-Shot Classification via Gaussian Mixture
+                                                            Discriminant Analysis</h6>
+                                                        <i class="w3-small w3-margin-bottom">Yiqi Wu, Huachao Wu,
+                                                            Ronglei Hu, Yilin Chen, and Dejun Zhang</i><br>
+                                                        <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="border-bottom">
+                                                    <td></td>
+                                                    <td>
+                                                        <h6>Distance-Aware Tri-Perspective View for Efficient 3D
+                                                            Perception in Autonomous Driving</h6>
+                                                        <i class="w3-small">Yutao Tang, Jigang Zhao, Zhengrui Qin, Rui
+                                                            Qiu, Lingying Zhao, Jie Ren, and Guangxi Chen</i><br>
+                                                        <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+<!-- session2 -->
+                                                <tr>
+                                                    <td>
+                                                        <h4>Session 2: Detecting & Estimating from images</h4>
+                                                        Chair: Ko-Chih Wang <br>
+                                                        Location: A301 Multifunctional Room
+                                                    </td>
+                                                    <td class="border-bottom">
+                                                        <h6>Text-Guided Diffusion with Spectral Convolution for 3D Human Pose Estimation
+                                                        </h6>
+                                                        <i class="w3-small">Liyuan Shi, Suping Wu, Sheng Yang, Weibin Qiu, Dong Qiang, and Jiarui Zhao</i><br>
+                                                        <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>Learning Transformation-Isomorphic Latent Space for Accurate Hand Pose Estimation</h6>
+                                                        <i class="w3-small">Kaiwen Ren, Lei Hu, Zhiheng Zhang, Yongjing Ye, and Shihong Xia</i><br>
+                                                        <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>Skeletal Gesture Recognition Based on Joint Spatio-Temporal and Multi-Modal Learning</h6>
+                                                        <i class="w3-small">Zhijing Yu, Zhongjie Zhu, Di Ge, Renwei Tu, Yongqiang Bai, Yueping Yang, and Yuer Wang</i><br>
+                                                        <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>Global-Local Complementary Representation Network for Vehicle Re-Identification</h6>
+                                                        <i class="w3-small">Mingchen Deng, Ziyao Tang, and Guoqiang Xiao</i><br>
+                                                        <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>Breaking the Single-Stage Barrier: Synergistic Data-Model Adaptation at Test-Time for Medical Image Segmentation</h6>
+                                                        <i class="w3-small">Wenjuan Zhou, Wei Chen, Yulin He, Di Wu, and Chen Li</i><br>
+                                                        <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>                 
+                                                
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="">
+                                                        <h6>Region-Aware Sparse Attention Network for Lane Detection</h6>
+                                                        <i class="w3-small">Yan Deng and Guoqiang Xiao</i><br>
+                                                        <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+<!-- 15:10 – 15:40 &emsp; Break & Demo  -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        15:10 – 15:40 &emsp; Break & Demo 
+                                    </button>
+                                </h2>
+
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <table class="">
+                                            <tbody class="">
+                                                <tr>
+                                                    <td colspan="">
+                                                        <h4>DEMO</h4>
+                                                        Location: 2F A215 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;
+                                                    </td>
+                                                    <td colspan="2" class="border-bottom">
+                                                        <h6>WotaBeats: Avatar-based Rhythm Interaction Applied Wotagei in Virtual Reality Experience</h6>
+                                                        <div class="w3-margin-bottom">
+                                                            <i class="w3-small">Kalin Guanlun Lai, Guan-Wen Wang, Yi Ting, Heng-Hao Wang, Hsuan-Tung Lai, Zhe-Cheng Chang, Po-Hung Chiang, and Tse-Yu Pan</i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td colspan="2" class="border-bottom">
+                                                        <h6>From Steps to Verses: Following the Shared Journey of Language and the Body Through Wearable Technology</h6>
+                                                        <div class="w3-margin-bottom">
+                                                            <i class="w3-small">Yi-Wen Huang and Tsun-Hung Tsai</i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td colspan="2" class="border-bottom">
+                                                        <h6>ServeSense: Interactive VR Tennis Serve Training System Enhanced with Haptic Feedback</h6>
+                                                         <div class="w3-margin-bottom">
+                                                            <i class="w3-small">Chi Tsao, Ryan Shan, Neng-Hao Yu, and Tse-Yu Pan</i>
+                                                         </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td colspan="2" class="border-bottom">
+                                                        <h6>Exploring Perceptual Homogenization through a VR-Based AI Narrative</h6>
+                                                        <div class="w3-margin-bottom">
+                                                            <i class="w3-small">Bing-Chen Kao and Tsun-Hung Tsai</i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td colspan="2">
+                                                        <h6>Avatar Animations and Audio Fillers for Managing Response Delays</h6>
+                                                        <i class="w3-small w3-margin-bottom">Gopi Krishnan Singaravelan, Zhi Lynn Lay, and Ping-Hsuan Han</i><br>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+<!-- 15:40 - &emsp; &emsp; &emsp; Session 3, 4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        15:40 - &emsp; &emsp; &emsp; Session 3, 4
+                                    </button>
+                                </h2>
+                                
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <table class="">
+                                            <tbody class="">
+<!-- session3 -->
+                                                <tr>
+                                                    <td colspan="1">
+                                                        <h4>Session 3: Shape Extraction or Editing</h4>
+                                                        Chair: I-Chen Lin <br>
+                                                        Location: A2 International Conference Hall
+                                                    </td>
+                                                    <!-- <td></td> -->
+                                                    <td colspan="2" class="border-bottom">
+                                                        <h6>Swept Volume Computation with Enhanced Geometric Detail Preservation</h6>
+                                                        <i class="w3-small">Pengfei Wang, Yuexin Yang, Shuangmin Chen, Shiqing Xin, Changhe Tu, and Wenping Wang</i><br>
+                                                        <span class="pale-blue">&nbsp; Journal Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>PaMO: Parallel Mesh Optimization for Intersection-Free Low-Poly Modeling on the GPU</h6>
+                                                        <i class="w3-small">Seonghun Oh, Xiaodi Yuan, Xinyue Wei, Ruoxi Shi, Fanbo Xiang, Minghua Liu, and Hao Su</i><br>
+                                                        <span class="pale-blue w3-margin-bottom">&nbsp; Journal Track &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>Computational Design of Body-Supporting Assemblies</h6>
+                                                        <i class="w3-small">Yixuan He, Rulin Chen, Bailin Deng, and Peng Song</i><br>
+                                                        <span class="pale-blue w3-margin-bottom">&nbsp; Journal Track
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>Unsupervised 3D Shape Parsing with Primitive Correspondence</h6>
+                                                        <i class="w3-small w3-margin-bottom">Tianshu Zhao, Yanran Guan, and Oliver van Kaick</i><br>
+                                                        <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="border-bottom">
+                                                    <td></td>
+                                                    <td>
+                                                        <h6>SPLICE: Part-Level 3D Shape Editing from Local Semantic Extraction to Global Neural Mixing</h6>
+                                                        <i class="w3-small">Jin Zhou, Hongliang Yang, Pengfei Xu, and Hui Huang</i><br>
+                                                        <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+<!-- session4 -->
+                                                <tr>
+                                                    <td>
+                                                        <h4>Session 4: Interaction & Visualization  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</h4>
+                                                        Chair: Yi-Jheng Huang <br>
+                                                        Location: A301 Multifunctional Room
+                                                    </td>
+                                                    <td class="border-bottom">
+                                                        <h6>CoSketcher: Collaborative and Iterative Sketch Generation with LLMs under Linguistic and Spatial Control
+                                                        </h6>
+                                                        <i class="w3-small">Liwen Mei, Manhao Guan, Yifan Zheng, and Dongliang Zhang</i><br>
+                                                        <span class="pale-red w3-margin-bottom">&nbsp; Conference Track &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>Easy Modeling of Man-Made Shapes in Virtual Reality</h6>
+                                                        <i class="w3-small">Haoyu Tang, Fancheng Gao, Kenny Tsu Wei Choo, Bernd Bickel, and Peng Song</i><br>
+                                                        <span class="pale-red w3-margin-bottom">&nbsp; Conference Track &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>ChromBrain Wall: A Virtual Reality Game Featuring Customized Full-Body Movement for Long-Term Physical and Cognitive Training in Older Adults</h6>
+                                                        <i class="w3-small">Hao Wu, Juanjuan Zhao, Aoyu Li, and Yan Qiang</i><br>
+                                                        <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>C2Views: Knowledge-based Colormap Design for Multiple-View Consistency</h6>
+                                                        <i class="w3-small">Yihan Hou, Yilin Ye, Liangwei Wang, Huamin Qu, and Wei Zeng</i><br>
+                                                        <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="border-bottom">
+                                                        <h6>Structural Entropy Based Visualization of Social Networks</h6>
+                                                        <i class="w3-small">Mingliang Xue, Lu Chen, Chunyu Wei, Shuowei Hou, Lizhen Cui, Oliver Deussen, and Yunhai Wang</i><br>
+                                                        <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>                 
+                                                
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="">
+                                                        <h6>CMI-MTL: Cross-Mamba interaction based multi-task learning for medical visual question answering</h6>
+                                                        <i class="w3-small">Qiangguo Jin, Xianyao Zheng, Hui Cui, Changming Sun, Yuqi Fang, Cong Cong, Ran Su, Leyi Wei, Ping Xuan, and Junbo Wang</i><br>
+                                                        <span class="pale-red">&nbsp; Conference Track &nbsp;</span>
+                                                        <span class="dashed-line w3-margin-bottom">&nbsp; Remote
+                                                            &nbsp;</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...
+                    </div>
+                </div>
+            </div>
+
+            <!-- ////// -->
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-light-grey w3-container w3-padding-32 w3-center w3-opacity">
+        <p>If you have any questions or suggestions, please contact us by <a
+                href="mailto:pg2025team@gmail.com">pg2025team@gmail.com</a></p>
+        <p> © Pacific Graphics 2025 - All Rights Reserved </p>
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
